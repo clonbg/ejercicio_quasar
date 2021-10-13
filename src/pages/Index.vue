@@ -1,20 +1,39 @@
 <template>
   <q-page class="flex flex-center">
-    <div class="q-pa-md row items-start q-gutter-md" v-for="item in entrys" :key="item.id">
-    <q-card class="my-card">
-      <q-img src="https://cdn.quasar.dev/img/parallax2.jpg">
-        <div class="absolute-bottom">
-          <div class="text-h6">Our Changing Planet</div>
-          <div class="text-subtitle2">by John Doe</div>
-        </div>
-      </q-img>
+    <div
+      class="q-pa-md row items-start q-gutter-md"
+      v-for="item in entrys"
+      :key="item.id"
+    >
+      {{ item }}
+      <q-card class="my-card" flat>
+        <q-card-section horizontal>
+          <q-card-section class="q-pt-xs">
+            <div class="text-h5 q-mt-sm q-mb-xs" v-html="item.title"></div>
+            <div class="text-overline">Overline</div>
+            <div class="text-caption text-grey">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
+          </q-card-section>
 
-      <q-card-actions>
-        <q-btn flat>Action 1</q-btn>
-        <q-btn flat>Action 2</q-btn>
-      </q-card-actions>
-    </q-card>
-  </div>
+          <q-card-section class="col-5 flex flex-center">
+            <q-img
+              class="rounded-borders"
+              src="https://cdn.quasar.dev/img/parallax2.jpg"
+            />
+          </q-card-section>
+        </q-card-section>
+
+        <q-separator />
+
+        <q-card-actions>
+          <q-btn flat round icon="event" />
+          <q-btn flat> 7:30PM </q-btn>
+          <q-btn flat color="primary"> Reserve </q-btn>
+        </q-card-actions>
+      </q-card>
+    </div>
   </q-page>
 </template>
 
@@ -24,22 +43,20 @@ import { stories } from "../store/blog.json";
 
 export default defineComponent({
   name: "PageIndex",
-  data () {
+  data() {
     return {
-      entrys: stories
-    }
+      entrys: stories,
+    };
   },
   methods: {
-    update(){
-      console.log(this.entrys[0].id)
-    }
+    update() {
+      console.log(this.entrys[0].id);
+    },
   },
   created() {
-    this.update()
-  }
-
-  })
-
+    this.update();
+  },
+});
 </script>
 
 <style scoped></style>
