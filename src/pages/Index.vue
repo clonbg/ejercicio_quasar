@@ -1,8 +1,7 @@
 <template>
-  <q-page class="flex flex-center">
+  <q-page class="flex flex-center q-pt-xl">
     <div
-      class="row full-width reverse-wrap"
-      style="padding: 2rem"
+      class="row full-width reverse-wrap q-pa-xl q-px-xl"
       v-for="item in entrys"
       :key="item.id"
     >
@@ -19,7 +18,7 @@
           </span>
         </div>
         <div
-          class="text-caption text-grey-10 justify-between"
+          class="text-body1 text-grey-10 justify-between"
           v-html="item.description"
         ></div>
       </div>
