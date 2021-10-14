@@ -1,40 +1,34 @@
 <template>
   <q-page class="flex flex-center">
     <div
-      class="q-pa-md row items-start q-gutter-md"
+      class="row full-width reverse-wrap"
+      style="padding: 2rem"
       v-for="item in entrys"
       :key="item.id"
     >
-      <q-card class="my-card" flat>
-        <q-card-section horizontal class="full-height">
-          <q-card-section class="q-pt-xs">
-            <div class="text-h5 q-mt-sm q-mb-xs" v-html="item.title"></div>
-            <div class="text-overline text-blue">{{ item.date }}</div>
-            <div class="text-overline text-red">
-              <span v-for="(tag, index) in item.categorias" :key="index"
-                >{{ tag + " " }}
-              </span>
-            </div>
-            <div
-              class="text-caption text-grey-10 justify-between"
-              v-html="item.description"
-            ></div>
-            
-          </q-card-section>
-          
-            
-          <q-card-section class="col-5 flex flex-center">
-            <q-img
-              class="rounded-borders"
-              src="https://cdn.quasar.dev/img/parallax2.jpg"
-            />
-          </q-card-section>
-          
-        </q-card-section>
-              <q-btn color="secondary" label="Leer más.."/>
-      <q-separator dark />
-      </q-card>
+      <div class="row full-width q-px-sm q-pt-sm">
+        <q-btn color="secondary" label="Leer más.." />
+      </div>
 
+      <div class="col-sm-8 q-px-sm">
+        <div class="text-h5 q-mt-sm q-mb-xs" v-html="item.title"></div>
+        <div class="text-overline text-blue">{{ item.date }}</div>
+        <div class="text-overline text-red">
+          <span v-for="(tag, index) in item.categorias" :key="index"
+            >#/{{ tag + " " }}
+          </span>
+        </div>
+        <div
+          class="text-caption text-grey-10 justify-between"
+          v-html="item.description"
+        ></div>
+      </div>
+      <div class="col-sm-4 col-12 q-px-sm">
+        <q-img
+          class="rounded-borders"
+          src="https://cdn.quasar.dev/img/parallax2.jpg"
+        />
+      </div>
     </div>
   </q-page>
 </template>
