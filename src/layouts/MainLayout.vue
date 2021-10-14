@@ -15,7 +15,7 @@
           El blog de Clonbg
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div><img src="/del_blog/kiss.png" style="width:6rem"/></div>
       </q-toolbar>
     </q-header>
 

@@ -5,11 +5,7 @@
       v-for="item in entrys"
       :key="item.id"
     >
-      <div class="row full-width q-px-sm q-pt-sm">
-        <q-btn color="secondary" label="Leer más.." />
-      </div>
-
-      <div class="col-sm-8 q-px-sm">
+      <div class="col-sm-7 q-px-sm full-height">
         <div class="text-h5 q-mt-sm q-mb-xs" v-html="item.title"></div>
         <div class="text-overline text-blue">{{ item.date }}</div>
         <div class="text-overline text-red">
@@ -17,15 +13,21 @@
             >#/{{ tag + " " }}
           </span>
         </div>
-        <div
-          class="text-body1 text-grey-10 justify-between"
-          v-html="item.description"
-        ></div>
+        <div class="self-center">
+          <div
+            class="text-body1 text-grey-10 justify-between"
+            v-html="item.description"
+          ></div>
+          <div class="row full-width">
+            <q-btn color="secondary" label="Leer más.." />
+          </div>
+        </div>
       </div>
-      <div class="col-sm-4 col-12 q-px-sm">
-        <q-img
+      <div class="col-sm-5 col-12 q-px-sm">
+        <img
           class="rounded-borders"
-          src="https://cdn.quasar.dev/img/parallax2.jpg"
+          :src="`./../../${item.id}${item.imagen}`"
+          style="width: 100%"
         />
       </div>
     </div>
