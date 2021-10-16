@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar class="q-pa-xl">
+      <q-toolbar>
         <q-btn
           flat
           dense
@@ -15,7 +15,7 @@
           El blog de Clonbg
         </q-toolbar-title>
 
-        <div><img src="/del_blog/kiss.png" style="width:6rem"/></div>
+        <div><img src="/del_blog/kiss.png" style="width:6rem" class="q-pa-md"/></div>
       </q-toolbar>
     </q-header>
 
