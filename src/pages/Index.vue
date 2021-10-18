@@ -56,12 +56,9 @@ export default defineComponent({
     };
   },
   methods: {
-    update() {
-      console.log(this.entrys[0].id);
-    },
+    
   },
   created() {
-    this.update();
   },
 });
 </script>

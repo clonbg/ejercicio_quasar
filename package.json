@@ -14,7 +14,10 @@
     "@quasar/quasar-ui-qmarkdown": "^2.0.0-alpha.8",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
+    "html-loader": "^2.1.2",
+    "markdown-loader": "^6.0.0",
     "quasar": "^2.0.0",
+    "vue-markdown-loader": "^2.4.1",
     "vuex": "^4.0.1"
   },
   "devDependencies": {
