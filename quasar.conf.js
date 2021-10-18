@@ -70,32 +70,15 @@ module.exports = configure(function (ctx) {
       chainWebpack (chain) {
         chain.plugin('eslint-webpack-plugin')
           .use(ESLintPlugin, [{ extensions: [ 'js', 'vue' ] }]);
-        chain.module.rule('md')
-        .test(/\.md/)
-        .use('vue-loader')
-        .loader('vue-loader')
-        .end()
-        .use('vue-markdown-loader')
-        .loader('vue-markdown-loader/lib/markdown-compiler')
-        .options({
-          raw: true
-        })
+        chain.module
+          .rule('raw')
+          .test(/\.md$/)
+          .use('raw-loader')
+          .loader('raw-loader')
+          .end()
       },
     },
-    /* module.exports = {
-      chainWebpack: config => {
-        config.module.rule('md')
-          .test(/\.md/)
-          .use('vue-loader')
-          .loader('vue-loader')
-          .end()
-          .use('vue-markdown-loader')
-          .loader('vue-markdown-loader/lib/markdown-compiler')
-          .options({
-            raw: true
-          })
-      }
-    } */
+
     
 
     // Full list of options: https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-devServer

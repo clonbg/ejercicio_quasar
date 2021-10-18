@@ -19,7 +19,7 @@
             v-html="item.description"
           ></div>
           <div class="row full-width">
-            <q-btn color="secondary" label="Leer más.." />
+            <q-btn color="secondary" label="Leer más.."/>
           </div>
         </div>
       </div>
@@ -30,16 +30,6 @@
           style="width: 100%"
         />
       </div>
-      <q-markdown>
-        <pre>
-::: tip
-Testing
-:::
-        
-> More testing
-      </pre
-        >
-      </q-markdown>
     </div>
   </q-page>
 </template>
