@@ -19,7 +19,7 @@
             v-html="item.description"
           ></div>
           <div class="row full-width">
-            <q-btn color="secondary" label="Leer más.."/>
+            <q-btn color="secondary" label="Leer más.." :to="{ path: `${item.id}`, params: {markdown: item.id}}"/>
           </div>
         </div>
       </div>

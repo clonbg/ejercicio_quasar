@@ -11,15 +11,18 @@
 </template>
 
 <script>
-const texto = require(`../markdowns/stories/script-autostart.md`);
+
 export default {
+  props: ['markdown'],
   data() {
     return {
       post: "",
     };
   },
   created() {
+    const texto = require(`../markdowns/stories/${this.$route.params.markdown}.md`);
     this.post = texto.default;
+    console.log(this.$route.params.markdown)
   },
 };
 </script>
