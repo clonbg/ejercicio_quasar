@@ -5,6 +5,9 @@
     >
       <div class="col q-px-sm full-height">
         <q-markdown :src="post" style="font-size:120%"></q-markdown>
+        <br>
+        <q-btn color="secondary" label="Volver" :to="{ path: '/'}">
+            </q-btn>
       </div>
     </div>
   </q-page>

@@ -19,7 +19,8 @@
             v-html="item.description"
           ></div>
           <div class="row full-width">
-            <q-btn color="secondary" label="Leer más.." :to="{ path: `${item.id}`, params: {markdown: item.id}}"/>
+            <q-btn color="secondary" label="Leer más.." :to="{ path: item.id, params: { markdown: item.id } }">
+            </q-btn>
           </div>
         </div>
       </div>
@@ -45,11 +46,8 @@ export default defineComponent({
       entrys: stories,
     };
   },
-  methods: {
-    
-  },
-  created() {
-  },
+  methods: {},
+  created() {},
 });
 </script>
 
