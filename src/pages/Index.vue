@@ -1,8 +1,9 @@
 <template>
-  <q-page class="flex flex-center q-pt-xl">
+  <q-page>
+    <div class="flex flex-center-q-pt-xl">
     <div
       class="row full-width reverse-wrap q-pa-xl q-px-xl"
-      v-for="item in entrys"
+      v-for="item in filtroPaginacion"
       :key="item.id"
     >
       <div class="col-sm-7 q-px-sm full-height">
@@ -32,19 +33,41 @@
         />
       </div>
     </div>
+    <div class="flex flex-center q-pa-xl q-mx-auto">
+    <q-pagination
+      v-model="current"
+      :max="(entrys.length/10)+1"
+      direction-links
+      boundary-links
+      icon-first="skip_previous"
+      icon-last="skip_next"
+      icon-prev="fast_rewind"
+      icon-next="fast_forward"
+    />
+  </div>
+    </div>
   </q-page>
 </template>
 
 <script>
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 import { stories } from "../store/blog.json";
 
 export default defineComponent({
   name: "PageIndex",
-  data() {
+  setup() {
     return {
       entrys: stories,
+      current: ref(1)
     };
+  },
+  computed: {
+    filtroPaginacion (){
+      var entradas;
+      entradas = this.entrys.slice((this.current*10)-10,this.current*10)
+      console.log(this.current,entradas)
+      return entradas
+    }
   },
   methods: {},
   created() {},
