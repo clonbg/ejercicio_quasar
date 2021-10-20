@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <div class="flex flex-center-q-pt-xl">
+    <div class="flex flex-center q-pt-xl">
     <div
       class="row full-width reverse-wrap q-pa-xl q-px-xl"
       v-for="item in filtroPaginacion"
@@ -34,15 +34,13 @@
       </div>
     </div>
     <div class="flex flex-center q-pa-xl q-mx-auto">
-    <q-pagination
+      <q-pagination
       v-model="current"
-      :max="(entrys.length/10)+1"
-      direction-links
-      boundary-links
-      icon-first="skip_previous"
-      icon-last="skip_next"
-      icon-prev="fast_rewind"
-      icon-next="fast_forward"
+      color="teal"
+      :max="Math.floor(entrys.length/10)+1"
+      :max-pages="3"
+      :ellipses="false"
+      :boundary-numbers="false"
     />
   </div>
     </div>
