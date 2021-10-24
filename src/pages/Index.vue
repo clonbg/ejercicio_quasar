@@ -36,11 +36,9 @@
     <div class="flex flex-center q-pa-xl q-mx-auto">
       <q-pagination
       v-model="current"
-      color="teal"
       :max="Math.floor(entrys.length/10)+1"
-      :max-pages="3"
-      :ellipses="false"
-      :boundary-numbers="false"
+      input
+      input-class="text-orange-10"
     />
   </div>
     </div>
