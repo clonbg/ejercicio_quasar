@@ -22,10 +22,16 @@ export default {
       post: "",
     };
   },
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+  },
   created() {
     const texto = require(`../markdowns/stories/${this.$route.params.markdown}.md`);
     this.post = texto.default;
     console.log(this.$route.params.markdown)
+    this.scrollToTop()
   },
 };
 </script>

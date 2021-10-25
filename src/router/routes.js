@@ -28,13 +28,15 @@ requireComponent.keys().forEach((fileName) => {
   Vue.component(componentName, componentConfig.default || componentConfig)
 })
 
+
+
 const routes = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Index.vue') },
-      { path: ':markdown',name: ':markdown',component: () => import('pages/Post.vue') }
+      { path: ':markdown',coordenadas: ':coordenadas',component: () => import('pages/Post.vue') }
     ]
   },
 
