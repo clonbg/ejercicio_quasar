@@ -5,9 +5,12 @@
         class="row full-width reverse-wrap q-pa-xl q-px-xl"
         v-for="item in filtroPaginacion"
         :key="item.id"
+        :id="item.id"
       >
         <div class="col-sm-7 q-px-sm full-height">
-          <router-link :to="{ path: item.id, params: { markdown: item.id } }"
+          <router-link 
+          :href="item.id"
+          :to="{ path: item.id, params: { markdown: item.id } }"
             ><div class="text-h5 q-mt-sm q-mb-xs" v-html="item.title"></div
           ></router-link>
           <div class="text-overline text-blue">{{ item.date }}</div>
@@ -45,6 +48,7 @@
           :max="Math.floor(entrys.length / 10) + 1"
           input
           input-class="text-orange-10"
+          @click="scrollToTop"
         />
       </div>
     </div>
@@ -71,8 +75,14 @@ export default defineComponent({
       return entradas;
     },
   },
-  methods: {},
-  created() {},
+  methods: {
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
+  },
+  created() {
+    this.scrollToTop()
+  },
 });
 </script>
 

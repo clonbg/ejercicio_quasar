@@ -36,7 +36,7 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Index.vue') },
-      { path: ':markdown',coordenadas: ':coordenadas',component: () => import('pages/Post.vue') }
+      { path: ':markdown',component: () => import('pages/Post.vue') }
     ]
   },
 
