@@ -56,6 +56,7 @@
 </template>
 
 <script>
+//https://v0-17.quasar-framework.org/components/web-storage.html
 import { defineComponent, ref } from "vue";
 import { stories } from "../store/blog.json";
 
