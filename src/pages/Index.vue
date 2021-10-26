@@ -8,9 +8,9 @@
         :id="item.id"
       >
         <div class="col-sm-7 q-px-sm full-height">
-          <router-link 
-          :href="item.id"
-          :to="{ path: item.id, params: { markdown: item.id } }"
+          <router-link
+            :href="item.id"
+            :to="{ path: item.id, params: { markdown: item.id } }"
             ><div class="text-h5 q-mt-sm q-mb-xs" v-html="item.title"></div
           ></router-link>
           <div class="text-overline text-blue">{{ item.date }}</div>
@@ -56,7 +56,6 @@
 </template>
 
 <script>
-//https://v0-17.quasar-framework.org/components/web-storage.html
 import { defineComponent, ref } from "vue";
 import { stories } from "../store/blog.json";
 
@@ -68,11 +67,17 @@ export default defineComponent({
       current: ref(1),
     };
   },
+  watch: {
+    current(newCurrent) {
+      //console.log(newCurrent);
+      localStorage.current = newCurrent;
+    },
+  },
   computed: {
     filtroPaginacion() {
       var entradas;
       entradas = this.entrys.slice(this.current * 10 - 10, this.current * 10);
-      console.log(this.current, entradas);
+      //console.log(this.current, entradas);
       return entradas;
     },
   },
@@ -81,8 +86,10 @@ export default defineComponent({
       window.scrollTo(0, 0);
     },
   },
-  created() {
-    this.scrollToTop()
+  mounted() {
+    if (localStorage.current) {
+      this.current = localStorage.current;
+    }
   },
 });
 </script>
