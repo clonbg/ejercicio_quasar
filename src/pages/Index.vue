@@ -67,12 +67,7 @@ export default defineComponent({
       current: ref(1),
     };
   },
-  watch: {
-    current(newCurrent) {
-      //console.log(newCurrent);
-      localStorage.current = newCurrent;
-    },
-  },
+  watch: {},
   computed: {
     filtroPaginacion() {
       var entradas;
@@ -86,11 +81,7 @@ export default defineComponent({
       window.scrollTo(0, 0);
     },
   },
-  mounted() {
-    if (localStorage.current) {
-      this.current = localStorage.current;
-    }
-  },
+  mounted() {},
 });
 </script>
 

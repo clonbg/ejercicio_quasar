@@ -6,7 +6,7 @@
       <div class="col q-px-sm full-height">
         <q-markdown :src="post" style="font-size:120%"></q-markdown>
         <br>
-        <q-btn color="secondary" label="Volver" @click="$router.go(-1)">
+        <q-btn color="secondary" label="Volver" @click="volver">
             </q-btn>
       </div>
     </div>
@@ -26,6 +26,9 @@ export default {
     scrollToTop() {
       window.scrollTo(0, 0);
     },
+    volver() {
+      this.$router.go(-1)
+    }
   },
   created() {
     const texto = require(`../markdowns/stories/${this.$route.params.markdown}.md`);
