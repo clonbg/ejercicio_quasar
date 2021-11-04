@@ -17,7 +17,6 @@
     "html-loader": "^2.1.2",
     "markdown-loader": "^6.0.0",
     "quasar": "^2.0.0",
-    "vue-disqus": "^5.1.0",
     "vue-markdown-loader": "^2.4.1",
     "vuex": "^4.0.1"
   },
