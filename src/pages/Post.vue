@@ -62,7 +62,7 @@ export default {
     },
     async cargarComentarios() {
       let response = await this.$axios.get(
-        "http://cwhoami.duckdns.org:58155/api/v1/comments/?url=https://glosa.example/best-SO/"
+        "https://glosaclonbg.ignorelist.com/api/v1/comments/?url=https://glosa.example/best-SO/"
       );
       this.comentarios = response.data;
       console.log(this.comentarios);
