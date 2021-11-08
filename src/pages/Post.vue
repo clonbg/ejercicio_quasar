@@ -8,7 +8,7 @@
           <h5>Comentarios</h5>
           <q-list
             class="rounded-borders"
-            v-for="item in comentarios"
+            v-for="item in comentariosOrdenados"
             :key="item.id"
           >
             <q-item clickable v-ripple class="q-my-lg comment">
@@ -51,6 +51,37 @@ export default {
       dense: ref(false),
     };
   },
+  computed: {
+    comentariosOrdenados() {
+      var ordenados = [];
+      for (let index = 0; index < this.comentarios.length; index++) {
+        const element = this.comentarios[index];
+        // Lógica de colocación de cada elemento
+        if (element.parent == "") {
+          //Si no tiene parent
+          ordenados.push(element);
+        } else {
+          // Si tiene parent
+          var miparent = element.parent;
+          var arrayMismoParent = ordenados.find(function (item) {
+            return item.parent == miparent;
+          });
+          console.log(arrayMismoParent);
+          if (arrayMismoParent) {
+            //Si existe alguno con su mismo parent
+            var pos = ordenados.map(function(e) { return e.parent; }).lastIndexOf(element.parent);
+            ordenados.splice(pos+1, 0, element);
+          } else {
+            // No existe con su mismo parent
+            var pos = ordenados.map(function(e) { return e.id; }).indexOf(parseInt(element.parent));
+            ordenados.splice(pos+1, 0, element);
+          }
+        }
+        console.log(ordenados);
+      }
+      return ordenados;
+    },
+  },
   watch: {},
   methods: {
     scrollToTop() {
@@ -64,7 +95,7 @@ export default {
         "https://glosaclonbg.ignorelist.com/api/v1/comments/?url=https://glosa.example/best-SO/"
       );
       this.comentarios = response.data;
-      console.log(this.comentarios);
+      // console.log(this.comentarios);
     },
   },
   async mounted() {
