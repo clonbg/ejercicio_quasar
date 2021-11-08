@@ -5,14 +5,13 @@
         <q-markdown :src="post" style="font-size: 120%"></q-markdown>
         <div v-if="comentarios">
           <!-- Unas clases condicionales.... -->
+          <h5>Comentarios</h5>
           <q-list
-            bordered
-            class="rounded-borders q-ma-xl"
-            style="max-width: 35rem"
+            class="rounded-borders"
             v-for="item in comentarios"
             :key="item.id"
           >
-            <q-item clickable v-ripple>
+            <q-item clickable v-ripple class="q-my-lg comment">
               <q-item-section avatar>
                 <q-avatar>
                   <span class="material-icons full-width">
@@ -77,4 +76,9 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.comment {
+  border-left: 3px solid blue;
+  background-color: lightgrey;
+}
+</style>
