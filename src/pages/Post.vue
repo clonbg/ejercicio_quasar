@@ -11,7 +11,13 @@
             v-for="item in comentariosOrdenados"
             :key="item.id"
           >
-            <q-item clickable v-ripple class="q-my-lg comment">
+            <q-item
+              clickable
+              v-ripple
+              class="comment"
+              :class="{ 'q-mt-lg': item.parent == '' }"
+              :style="`margin-left: ${item.margen*3}rem`"
+            >
               <q-item-section avatar>
                 <q-avatar>
                   <span class="material-icons full-width">
@@ -31,7 +37,7 @@
           </q-list>
         </div>
         <div v-else>Por que?</div>
-        {{ comentarios }}
+        {{ comentariosOrdenados }}
         <br />
         <q-btn color="secondary" label="Volver" @click="volver"> </q-btn>
       </div>
@@ -59,6 +65,7 @@ export default {
         // Lógica de colocación de cada elemento
         if (element.parent == "") {
           //Si no tiene parent
+          element.margen = 0;
           ordenados.push(element);
         } else {
           // Si tiene parent
@@ -66,18 +73,26 @@ export default {
           var arrayMismoParent = ordenados.find(function (item) {
             return item.parent == miparent;
           });
-          console.log(arrayMismoParent);
           if (arrayMismoParent) {
             //Si existe alguno con su mismo parent
-            var pos = ordenados.map(function(e) { return e.parent; }).lastIndexOf(element.parent);
-            ordenados.splice(pos+1, 0, element);
+            var pos = ordenados
+              .map(function (e) {
+                return e.parent;
+              })
+              .lastIndexOf(element.parent);
+              element.margen=ordenados[pos].margen
+            ordenados.splice(pos + 1, 0, element);
           } else {
             // No existe con su mismo parent
-            var pos = ordenados.map(function(e) { return e.id; }).indexOf(parseInt(element.parent));
-            ordenados.splice(pos+1, 0, element);
+            var pos = ordenados
+              .map(function (e) {
+                return e.id;
+              })
+              .indexOf(parseInt(element.parent));
+              element.margen=ordenados[pos].margen+1
+            ordenados.splice(pos + 1, 0, element);
           }
         }
-        console.log(ordenados);
       }
       return ordenados;
     },
