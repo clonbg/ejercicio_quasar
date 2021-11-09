@@ -6,7 +6,62 @@
         <h5>
           Comentarios<span class="material-icons q-pl-md q-mr-xs"> forum </span
           >{{ comentarios.length > 0 ? comentarios.length : "0" }}
+          <span class="material-icons float-right" @click="open('right')"
+            >add_circle_outline<q-tooltip> Nuevo comentario </q-tooltip>
+          </span>
         </h5>
+        <!-- Modal -->
+        <q-dialog v-model="dialog" :position="position">
+          <q-card>
+            <q-card-section class="row items-center no-wrap">
+              <div>
+                <q-input
+                  color="teal"
+                  outlined
+                  v-model="nombre"
+                  label="Nombre"
+                  class="q-mt-md"
+                >
+                  <template v-slot:append>
+                    <q-icon name="badge" color="blue" />
+                  </template>
+                </q-input>
+                <q-input
+                  color="teal"
+                  outlined
+                  v-model="correo"
+                  label="Correo"
+                  class="q-mt-md"
+                >
+                  <template v-slot:append>
+                    <q-icon name="email" color="blue" />
+                  </template>
+                </q-input>
+                <div style="max-width: 300px">
+                  <q-input
+                    color="teal"
+                    outlined
+                    v-model="mensaje"
+                    label="Mensaje"
+                    class="q-mt-md"
+                    type="textarea"
+                    ><template v-slot:append>
+                      <q-icon name="chat_bubble" color="blue" />
+                    </template>
+                  </q-input>
+                  <q-toggle v-model="aceptado" class="q-my-md" /><a
+                    href="https://www.boe.es/eli/es/lo/2018/12/05/3/con"
+                    target="_blank"
+                    class="sinDecorar"
+                    >Acepto la Ley de Pretección de Datos</a
+                  >
+                  <q-btn class="q-my-md" color="primary" label="Enviar" />
+                </div>
+              </div>
+            </q-card-section>
+          </q-card>
+        </q-dialog>
+
         <div v-if="comentarios">
           <div
             class="rounded-borders"
@@ -73,8 +128,12 @@ export default {
     return {
       post: "",
       comentarios: [],
-      text: ref(""),
-      dense: ref(false),
+      dialog: ref(false),
+      position: ref("top"),
+      nombre: ref(""),
+      correo: ref(""),
+      mensaje: ref(""),
+      aceptado: ref(false),
     };
   },
   computed: {
@@ -132,6 +191,10 @@ export default {
       this.comentarios = response.data;
       // console.log(this.comentarios);
     },
+    open(pos) {
+      this.position = pos;
+      this.dialog = true;
+    },
   },
   async mounted() {
     const texto = require(`../markdowns/stories/${this.$route.params.markdown}.md`);
@@ -148,5 +211,9 @@ export default {
 }
 .comment-top {
   border-top: 2px solid blue;
+}
+.sinDecorar {
+  color: black;
+  text-decoration: none;
 }
 </style>
