@@ -3,41 +3,55 @@
     <div class="row full-width reverse-wrap q-pa-xl q-px-xl">
       <div class="col q-px-sm full-height">
         <q-markdown :src="post" style="font-size: 120%"></q-markdown>
+        <h5>Comentarios<span class="material-icons q-pl-md q-mr-xs"> forum </span>{{comentarios.length>0 ? comentarios.length : '0' }}</h5>
         <div v-if="comentarios">
-          <!-- Unas clases condicionales.... -->
-          <h5>Comentarios</h5>
           <q-list
             class="rounded-borders"
             v-for="item in comentariosOrdenados"
             :key="item.id"
           >
             <q-item
-              clickable
-              v-ripple
-              class="comment"
               :class="{ 'q-mt-lg': item.parent == '' }"
-              :style="`margin-left: ${item.margen*3}rem`"
+              :style="`margin-left: ${item.margen * 3}rem`"
             >
-              <q-item-section avatar>
-                <q-avatar>
-                  <span class="material-icons full-width">
-                    account_circle
-                  </span>
-                </q-avatar>
+              <q-item-section
+                avatar
+                class="comment"
+                :class="{ 'comment-top': item.parent != '' }"
+              >
+                <p class="q-mx-auto">{{ item.author }}</p>
+                <p class="q-mx-auto">
+                  {{ new Date(item.createdAt * 1000).getDate() }}/{{
+                    new Date(item.createdAt * 1000).getMonth() + 1
+                  }}/{{ new Date(item.createdAt * 1000).getFullYear() }}
+                </p>
               </q-item-section>
               <!-- Si es hijo de otro... -->
-              <q-item-section>
-                <q-item-label lines="1">{{ item.author }}</q-item-label>
-                <q-item-label caption lines="2">
-                  <span class="text-weight-bold"></span>
-                  {{ item.message }}
+              <q-item-section class="q-ml-sm">
+                <q-item-label lines="1">
+                  <span
+                    class="text-h7 q-ml-sm text-bold"
+                    v-if="item.parent != ''"
+                    >en respuesta a
+                    {{
+                      comentariosOrdenados[
+                        comentariosOrdenados
+                          .map(function (e) {
+                            return e.id;
+                          })
+                          .indexOf(parseInt(item.parent))
+                      ].author
+                    }}</span
+                  ></q-item-label
+                >
+                <q-item-label lines="2" class="text-h8">
+                  <p class="q-mt-sm q-ml-sm">{{ item.message }}</p>
                 </q-item-label>
               </q-item-section>
             </q-item>
           </q-list>
         </div>
         <div v-else>Por que?</div>
-        {{ comentariosOrdenados }}
         <br />
         <q-btn color="secondary" label="Volver" @click="volver"> </q-btn>
       </div>
@@ -80,7 +94,7 @@ export default {
                 return e.parent;
               })
               .lastIndexOf(element.parent);
-              element.margen=ordenados[pos].margen
+            element.margen = ordenados[pos].margen;
             ordenados.splice(pos + 1, 0, element);
           } else {
             // No existe con su mismo parent
@@ -89,7 +103,7 @@ export default {
                 return e.id;
               })
               .indexOf(parseInt(element.parent));
-              element.margen=ordenados[pos].margen+1
+            element.margen = ordenados[pos].margen + 1;
             ordenados.splice(pos + 1, 0, element);
           }
         }
@@ -124,7 +138,9 @@ export default {
 
 <style scoped>
 .comment {
-  border-left: 3px solid blue;
-  background-color: lightgrey;
+  border-right: 2px solid gray;
+}
+.comment-top {
+  border-top: 2px solid gray;
 }
 </style>
