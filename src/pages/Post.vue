@@ -3,32 +3,38 @@
     <div class="row full-width reverse-wrap q-pa-xl q-px-xl">
       <div class="col q-px-sm full-height">
         <q-markdown :src="post" style="font-size: 120%"></q-markdown>
-        <h5>Comentarios<span class="material-icons q-pl-md q-mr-xs"> forum </span>{{comentarios.length>0 ? comentarios.length : '0' }}</h5>
+        <h5>
+          Comentarios<span class="material-icons q-pl-md q-mr-xs"> forum </span
+          >{{ comentarios.length > 0 ? comentarios.length : "0" }}
+        </h5>
         <div v-if="comentarios">
-          <q-list
+          <div
             class="rounded-borders"
             v-for="item in comentariosOrdenados"
             :key="item.id"
           >
-            <q-item
-              :class="{ 'q-mt-lg': item.parent == '' }"
-              :style="`margin-left: ${item.margen * 3}rem`"
+            <div
+              class="row"
+              :class="{
+                'q-mt-lg': item.parent == '',
+                'q-mt-xs': item.parent != '',
+              }"
+              :style="`margin-left: ${item.margen * 3}vw`"
             >
-              <q-item-section
-                avatar
-                class="comment"
+              <div
+                class="comment q-pt-sm q-pr-xs"
                 :class="{ 'comment-top': item.parent != '' }"
               >
-                <p class="q-mx-auto">{{ item.author }}</p>
-                <p class="q-mx-auto">
+                <div class="q-mx-auto">{{ item.author }}</div>
+                <div class="q-mx-auto">
                   {{ new Date(item.createdAt * 1000).getDate() }}/{{
                     new Date(item.createdAt * 1000).getMonth() + 1
                   }}/{{ new Date(item.createdAt * 1000).getFullYear() }}
-                </p>
-              </q-item-section>
+                </div>
+              </div>
               <!-- Si es hijo de otro... -->
-              <q-item-section class="q-ml-sm">
-                <q-item-label lines="1">
+              <div class="q-ml-sm q-pt-sm">
+                <div>
                   <span
                     class="text-h7 q-ml-sm text-bold"
                     v-if="item.parent != ''"
@@ -42,14 +48,14 @@
                           .indexOf(parseInt(item.parent))
                       ].author
                     }}</span
-                  ></q-item-label
-                >
-                <q-item-label lines="2" class="text-h8">
+                  >
+                </div>
+                <div class="text-h8">
                   <p class="q-mt-sm q-ml-sm">{{ item.message }}</p>
-                </q-item-label>
-              </q-item-section>
-            </q-item>
-          </q-list>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div v-else>Por que?</div>
         <br />
@@ -138,9 +144,9 @@ export default {
 
 <style scoped>
 .comment {
-  border-right: 2px solid gray;
+  border-right: 2px solid blue;
 }
 .comment-top {
-  border-top: 2px solid gray;
+  border-top: 2px solid blue;
 }
 </style>
