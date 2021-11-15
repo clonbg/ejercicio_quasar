@@ -3,13 +3,13 @@
     <div class="row full-width reverse-wrap q-pa-xl q-px-xl">
       <div class="col q-px-sm full-height">
         <q-markdown :src="post" style="font-size: 120%"></q-markdown>
-        <h5>
+        <h3>
           Comentarios<span class="material-icons q-pl-md q-mr-xs"> forum </span
           >{{ comentarios.length > 0 ? comentarios.length : "0" }}
           <span class="material-icons float-right" @click="open('right')"
             >add_circle_outline<q-tooltip> Nuevo comentario </q-tooltip>
           </span>
-        </h5>
+        </h3>
         <!-- Modal -->
         <q-dialog v-model="dialog" :position="position">
           <q-card>
@@ -53,7 +53,7 @@
                     href="https://www.boe.es/eli/es/lo/2018/12/05/3/con"
                     target="_blank"
                     class="sinDecorar"
-                    >Acepto la Ley de Pretección de Datos</a
+                    ><small>Acepto la política de <strong>Protección de Datos</strong></small></a
                   >
                   <q-btn class="q-my-md" color="primary" label="Enviar" />
                 </div>
