@@ -2,7 +2,6 @@
   <div class="q-pa-xl">
     <h3>Consentimiento explícito</h3>
     <p><strong>En Valencia a 15 de Noviembre de 2021</strong></p>
-
     <p>
       Clonbg es el Responsable del tratamiento de los datos personales del
       Interesado y le informa de que estos datos se tratarán de conformidad con
@@ -50,7 +49,6 @@
     <q-btn color="secondary" label="Volver" @click="volver"> </q-btn>
   </div>
 </template>
-
 <script>
 export default {
   setup() {},
@@ -66,4 +64,5 @@ export default {
     this.scrollToTop();
   },
 };
+
 </script>
