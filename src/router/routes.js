@@ -36,7 +36,8 @@ const routes = [
     component: () => import('layouts/MainLayout.vue'),
     children: [
       { path: '', component: () => import('pages/Index.vue') },
-      { path: ':markdown',component: () => import('pages/Post.vue') }
+      { path: ':markdown',component: () => import('pages/Post.vue') },
+      { path: 'datos', component: () => import('pages/Datos.vue') },
     ]
   },
 

@@ -50,10 +50,13 @@
                     </template>
                   </q-input>
                   <q-toggle v-model="aceptado" class="q-my-md" /><a
-                    href="https://www.boe.es/eli/es/lo/2018/12/05/3/con"
-                    target="_blank"
                     class="sinDecorar"
-                    ><small>Acepto la política de <strong>Protección de Datos</strong></small></a
+                    ><small
+                      >Acepto la política de
+                      <strong @click="direccion" class="cursor-pointer"
+                        >Protección de Datos</strong
+                      ></small
+                    ></a
                   >
                   <q-btn class="q-my-md" color="primary" label="Enviar" />
                 </div>
@@ -194,6 +197,9 @@ export default {
     open(pos) {
       this.position = pos;
       this.dialog = true;
+    },
+    direccion() {
+      this.$router.push({ path: "datos" });
     },
   },
   async mounted() {
