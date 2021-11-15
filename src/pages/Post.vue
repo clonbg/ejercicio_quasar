@@ -18,7 +18,7 @@
                     <q-icon name="badge" color="blue" />
                   </template>
                 </q-input>
-                <q-input color="teal" outlined v-model="correo" label="Correo" class="q-mt-md">
+                <q-input color="teal" outlined v-model="correo" label="Correo. Sólo para avisarte" class="q-mt-md">
                   <template v-slot:append>
                     <q-icon name="email" color="blue" />
                   </template>
@@ -30,7 +30,7 @@
                   </q-input>
                   <q-toggle v-model="aceptado" class="q-my-md" /><a class="sinDecorar"><small>Acepto la política de
                       <strong @click="direccion" class="cursor-pointer">Protección de Datos</strong></small></a>
-                  <q-btn class="q-my-md" color="primary" label="Enviar" />
+                  <q-btn class="q-my-md" color="primary" label="Enviar" :disable="puedeEnviar" />
                 </div>
               </div>
             </q-card-section>
@@ -95,6 +95,9 @@ export default {
     };
   },
   computed: {
+    puedeEnviar() {
+      if (this.nombre.length >= 3 && this.mensaje.length >= 3 && this.aceptado == true) { return false } else { return true }
+    },
     comentariosOrdenados() {
       var ordenados = [];
       for (let index = 0; index < this.comentarios.length; index++) {
@@ -152,6 +155,10 @@ export default {
     open(pos) {
       this.position = pos;
       this.dialog = true;
+      this.nombre = ''
+      this.mensaje = ''
+      this.correo = ''
+      this.aceptado = false
     },
     direccion() {
       this.$router.push({ path: "datos" });
