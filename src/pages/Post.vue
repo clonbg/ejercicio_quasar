@@ -177,11 +177,11 @@ export default {
       );
       let token = response.data.token;
       let json = {
-        "parent": "",
+        "parent": 7,
         "token": token,
         "author": "Yolanda",
         "email": "yolanda@lala.com",
-        "message": "prueba de envio automático",
+        "message": "otra prueba",
         "thread": this.url
       }
       /*// POST request using axios with async/await
