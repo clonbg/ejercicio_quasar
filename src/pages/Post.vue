@@ -30,7 +30,7 @@
                   </q-input>
                   <q-toggle v-model="aceptado" class="q-my-md" /><a class="sinDecorar"><small>Acepto la política de
                       <strong @click="direccion" class="cursor-pointer">Protección de Datos</strong></small></a>
-                  <q-btn class="q-my-md" color="primary" label="Enviar" :disable="puedeEnviar" />
+                  <q-btn class="q-my-md" color="primary" label="Enviar" :disable="puedeEnviar" @click="guardarComentario" />
                 </div>
               </div>
             </q-card-section>
@@ -92,6 +92,7 @@ export default {
       correo: ref(""),
       mensaje: ref(""),
       aceptado: ref(false),
+      url: ref('https://glosa.example/best-SO/')
     };
   },
   computed: {
@@ -147,7 +148,7 @@ export default {
     },
     async cargarComentarios() {
       let response = await this.$axios.get(
-        "https://glosaclonbg.ignorelist.com/api/v1/comments/?url=https://glosa.example/best-SO/"
+        `https://glosaclonbg.ignorelist.com/api/v1/comments/?url=${this.url}`
       );
       this.comentarios = response.data;
       // console.log(this.comentarios);
@@ -169,6 +170,28 @@ export default {
       } else {
         return false
       }
+    },
+    async guardarComentario() {
+      let response = await this.$axios.get(
+        `https://glosaclonbg.ignorelist.com/api/v1/captcha/?url=${this.url}`
+      );
+      let token = response.data.token;
+      let json = {
+        "parent": "",
+        "token": token,
+        "author": "Yolanda",
+        "email": "yolanda@lala.com",
+        "message": "prueba de envio automático",
+        "thread": this.url
+      }
+      /*// POST request using axios with async/await
+      const article = { title: "Vue POST Request Example" };
+      const response = await axios.post("https://reqres.in/api/articles", article);
+      this.articleId = response.data.id;
+      */
+      console.log(json)
+      let res = await this.$axios.post("https://glosaclonbg.ignorelist.com/api/v1/comments/", json);
+      console.log(res.data)
     }
   },
   async mounted() {
