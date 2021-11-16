@@ -96,7 +96,7 @@ export default {
   },
   computed: {
     puedeEnviar() {
-      if (this.nombre.length >= 3 && this.mensaje.length >= 3 && this.aceptado == true) { return false } else { return true }
+      if (this.nombre.length >= 3 && this.mensaje.length >= 3 && this.aceptado == true && (this.correo.length == 0 || this.validarEmail())) { return false } else { return true }
     },
     comentariosOrdenados() {
       var ordenados = [];
@@ -163,6 +163,13 @@ export default {
     direccion() {
       this.$router.push({ path: "datos" });
     },
+    validarEmail() {
+      if (/^(?:[^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*|"[^\n"]+")@(?:[^<>()[\].,;:\s@"]+\.)+[^<>()[\]\.,;:\s@"]{2,63}$/i.test(this.correo)) {
+        return true
+      } else {
+        return false
+      }
+    }
   },
   async mounted() {
     const texto = require(`../markdowns/stories/${this.$route.params.markdown}.md`);
