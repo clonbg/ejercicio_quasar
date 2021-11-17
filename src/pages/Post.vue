@@ -30,8 +30,10 @@
                   </q-input>
                   <q-toggle v-model="aceptado" class="q-my-md" /><a class="sinDecorar"><small>Acepto la política de
                       <strong @click="direccion" class="cursor-pointer">Protección de Datos</strong></small></a>
-                  <q-btn class="q-my-md" color="primary" label="Enviar" :disable="puedeEnviar" @click="guardarComentario" />
-                  {{totalTime}}
+                  <q-btn class="q-my-md q-mx-md" color="primary" label="Enviar" :disable="puedeEnviar" @click="guardarComentario" />
+                  <span v-if="totalTime>0">
+                    {{totalTime}} segundos faltan
+                  </span>
                 </div>
               </div>
             </q-card-section>
@@ -95,12 +97,13 @@ export default {
       aceptado: ref(false),
       url: ref('https://glosa.example/best-SO/'),
       token: ref(''),
-      totalTime: ref(20)
+      totalTime: ref(20),
+      tempo: ref('')
     };
   },
   computed: {
     puedeEnviar() {
-      if (this.nombre.length >= 3 && this.mensaje.length >= 3 && this.aceptado == true && (this.correo.length == 0 || this.validarEmail())) { return false } else { return true }
+      if (this.nombre.length >= 3 && this.mensaje.length >= 3 && this.aceptado == true && this.totalTime <= 0 && (this.correo.length == 0 || this.validarEmail())) { return false } else { return true }
     },
     comentariosOrdenados() {
       var ordenados = [];
@@ -163,12 +166,18 @@ export default {
       this.mensaje = ''
       this.correo = ''
       this.aceptado = false
+      this.totalTime = 20
+      if (this.tempo != '') {
+        clearInterval(this.tempo)
+      }
       // pedimos el token
       let response = await this.$axios.get(
         `https://glosaclonbg.ignorelist.com/api/v1/captcha/?url=${this.url}`
       );
       this.token = response.data.token;
       console.log('token: ', this.token)
+      this.tempo = setInterval(this.updateTime, 1000)
+
     },
     direccion() {
       this.$router.push({ path: "datos" });
@@ -194,6 +203,12 @@ export default {
       let res = await this.$axios.post("https://glosaclonbg.ignorelist.com/api/v1/comments/", json)
       console.log(res.data)
       // hay que guardarlo en el objeto de comentarios tambíén, si es true
+    },
+    updateTime() {
+      this.totalTime--
+      if (this.totalTime <= 0 || this.tempo == '') {
+          clearInterval(this.tempo)
+      }
     },
   },
   async mounted() {
