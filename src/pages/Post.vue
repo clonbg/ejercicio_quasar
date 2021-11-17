@@ -31,6 +31,7 @@
                   <q-toggle v-model="aceptado" class="q-my-md" /><a class="sinDecorar"><small>Acepto la política de
                       <strong @click="direccion" class="cursor-pointer">Protección de Datos</strong></small></a>
                   <q-btn class="q-my-md" color="primary" label="Enviar" :disable="puedeEnviar" @click="guardarComentario" />
+                  {{totalTime}}
                 </div>
               </div>
             </q-card-section>
@@ -92,7 +93,9 @@ export default {
       correo: ref(""),
       mensaje: ref(""),
       aceptado: ref(false),
-      url: ref('https://glosa.example/best-SO/')
+      url: ref('https://glosa.example/best-SO/'),
+      token: ref(''),
+      totalTime: ref(20)
     };
   },
   computed: {
@@ -153,13 +156,19 @@ export default {
       this.comentarios = response.data;
       // console.log(this.comentarios);
     },
-    open(pos) {
+    async open(pos) {
       this.position = pos;
       this.dialog = true;
       this.nombre = ''
       this.mensaje = ''
       this.correo = ''
       this.aceptado = false
+      // pedimos el token
+      let response = await this.$axios.get(
+        `https://glosaclonbg.ignorelist.com/api/v1/captcha/?url=${this.url}`
+      );
+      this.token = response.data.token;
+      console.log('token: ', this.token)
     },
     direccion() {
       this.$router.push({ path: "datos" });
@@ -172,27 +181,20 @@ export default {
       }
     },
     async guardarComentario() {
-      let response = await this.$axios.get(
-        `https://glosaclonbg.ignorelist.com/api/v1/captcha/?url=${this.url}`
-      );
-      let token = response.data.token;
       let json = {
-        "parent": 7,
-        "token": token,
-        "author": "Yolanda",
-        "email": "yolanda@lala.com",
-        "message": "otra prueba",
+        "parent": "",
+        "token": this.token,
+        "author": "loca",
+        "email": "loca@lala.com",
+        "message": "loca",
         "thread": this.url
       }
-      /*// POST request using axios with async/await
-      const article = { title: "Vue POST Request Example" };
-      const response = await axios.post("https://reqres.in/api/articles", article);
-      this.articleId = response.data.id;
-      */
-      console.log(json)
-      let res = await this.$axios.post("https://glosaclonbg.ignorelist.com/api/v1/comments/", json);
+      // el token debe conseguirse 20 segundos antes de enviar
+      // console.log('json: ', json)
+      let res = await this.$axios.post("https://glosaclonbg.ignorelist.com/api/v1/comments/", json)
       console.log(res.data)
-    }
+      // hay que guardarlo en el objeto de comentarios tambíén, si es true
+    },
   },
   async mounted() {
     const texto = require(`../markdowns/stories/${this.$route.params.markdown}.md`);
