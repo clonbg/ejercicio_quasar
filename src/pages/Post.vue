@@ -1,18 +1,22 @@
 <template>
+  <!--   guardar el objeto  -->
   <q-page class="flex flex-center q-pt-xl">
     <div class="row full-width reverse-wrap q-pa-xl q-px-xl">
       <div class="col q-px-sm full-height">
         <q-markdown :src="post" style="font-size: 120%"></q-markdown>
         <h3>
           Comentarios<span class="material-icons q-pl-md q-mr-xs"> forum </span>{{ comentarios.length > 0 ? comentarios.length : "0" }}
-          <span class="material-icons float-right" @click="open('right')">add_circle_outline<q-tooltip> Nuevo comentario </q-tooltip>
+          <span class="material-icons float-right" @click="comment">add_circle_outline<q-tooltip> Nuevo comentario </q-tooltip>
           </span>
         </h3>
         <!-- Modal -->
         <q-dialog v-model="dialog" :position="position">
           <q-card>
-            <q-card-section class="row items-center no-wrap">
+            <q-card-section class="items-center no-wrap">
               <div>
+                <strong>
+                  {{tituloDialog}}
+                </strong>
                 <q-input color="teal" outlined v-model="nombre" label="Nombre" class="q-mt-md">
                   <template v-slot:append>
                     <q-icon name="badge" color="blue" />
@@ -30,7 +34,7 @@
                   </q-input>
                   <q-toggle v-model="aceptado" class="q-my-md" /><a class="sinDecorar"><small>Acepto la política de
                       <strong @click="direccion" class="cursor-pointer">Protección de Datos</strong></small></a>
-                  <q-btn class="q-my-md q-mx-md" color="primary" label="Enviar" :disable="puedeEnviar" @click="guardarComentario" />
+                  <q-btn class="q-ma-md" color="primary" label="Enviar" :disable="puedeEnviar" @click="guardarComentario" />
                   <span v-if="totalTime>0">
                     {{totalTime}} segundos faltan
                   </span>
@@ -51,6 +55,9 @@
                   {{ new Date(item.createdAt * 1000).getDate() }}/{{
                   new Date(item.createdAt * 1000).getMonth() + 1
                   }}/{{ new Date(item.createdAt * 1000).getFullYear() }}
+                </div>
+                <div class="material-icons q-mx-auto flex" @click="comment(item)">
+                  reply
                 </div>
               </div>
               <!-- Si es hijo de otro... -->
@@ -95,10 +102,12 @@ export default {
       correo: ref(""),
       mensaje: ref(""),
       aceptado: ref(false),
-      url: ref('https://glosa.example/best-SO/'),
+      url: ref(''),
       token: ref(''),
       totalTime: ref(20),
-      tempo: ref('')
+      tempo: ref(''),
+      parent: ref(''),
+      tituloDialog: ref('')
     };
   },
   computed: {
@@ -157,16 +166,17 @@ export default {
         `https://glosaclonbg.ignorelist.com/api/v1/comments/?url=${this.url}`
       );
       this.comentarios = response.data;
-      // console.log(this.comentarios);
+      //console.log(this.comentarios);
     },
-    async open(pos) {
-      this.position = pos;
+    async comment(item) {
+      this.position = 'right';
       this.dialog = true;
       this.nombre = ''
       this.mensaje = ''
       this.correo = ''
       this.aceptado = false
       this.totalTime = 20
+      this.parent = ''
       if (this.tempo != '') {
         clearInterval(this.tempo)
       }
@@ -175,9 +185,20 @@ export default {
         `https://glosaclonbg.ignorelist.com/api/v1/captcha/?url=${this.url}`
       );
       this.token = response.data.token;
-      console.log('token: ', this.token)
+      //console.log('token: ', this.token)
       this.tempo = setInterval(this.updateTime, 1000)
-
+      //console.log(item.id)
+      if (item.id == undefined) {
+        // esto es un comentario nuevo
+        //console.log('nuevo')
+        this.parent = ''
+        this.tituloDialog = 'Nuevo comentario'
+      } else {
+        // un reply
+        //console.log('reply')
+        this.parent = item.id
+        this.tituloDialog = `En respuesta a ${item.author}`
+      }
     },
     direccion() {
       this.$router.push({ path: "datos" });
@@ -191,29 +212,33 @@ export default {
     },
     async guardarComentario() {
       let json = {
-        "parent": "",
+        "parent": this.parent,
         "token": this.token,
-        "author": "loca",
-        "email": "loca@lala.com",
-        "message": "loca",
-        "thread": this.url
+        "author": this.nombre,
+        "email": this.correo,
+        "message": this.mensaje,
+        "thread": this.url,
+        "createdAt": new Date().getTime() / 1000
       }
-      // el token debe conseguirse 20 segundos antes de enviar
-      // console.log('json: ', json)
       let res = await this.$axios.post("https://glosaclonbg.ignorelist.com/api/v1/comments/", json)
-      console.log(res.data)
-      // hay que guardarlo en el objeto de comentarios tambíén, si es true
+      //console.log(res.data.added)
+      this.dialog = false
+      if (res.data.added) {
+        this.comentarios.push(json)
+      };
     },
     updateTime() {
       this.totalTime--
       if (this.totalTime <= 0 || this.tempo == '') {
-          clearInterval(this.tempo)
+        clearInterval(this.tempo)
       }
-    },
+    }
   },
   async mounted() {
     const texto = require(`../markdowns/stories/${this.$route.params.markdown}.md`);
     this.post = texto.default;
+    this.url = this.$route.path
+    //console.log(this.$route.path)
     await this.cargarComentarios();
     this.scrollToTop();
   },
