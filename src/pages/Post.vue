@@ -3,21 +3,23 @@
     <div class="row full-width reverse-wrap q-pa-xl q-px-xl">
       <div class="col q-px-sm full-height">
         <q-markdown :src="post" style="font-size: 120%"></q-markdown>
-        <a href="http://twitter.com/share?text=Gracias%20Developando%20por%20el%20tutorial&via=Developando" target="_blank"><q-icon size="xl" name="img:icons/twitter.png" class="q-pa-md"/>Comentar en twitter</a>
+        <q-icon size="xl" name="img:icons/twitter.png" class="q-pa-md cursor-pointer" @click="twitter" /><strong>Comentar en twitter</strong>
         <br />
-        <q-btn color="secondary" label="Volver" @click="volver"> </q-btn>
-
+        <q-btn color="secondary" label="Volver" @click="volver">
+        </q-btn>
       </div>
     </div>
   </q-page>
 </template>
-
 <script>
+import { openURL } from 'quasar'
+
 export default {
   props: ["markdown"],
-  setup() {
+  data() {
     return {
       post: "",
+      web: ''
     };
   },
   watch: {},
@@ -28,23 +30,26 @@ export default {
     volver() {
       this.$router.go(-1);
     },
+    twitter() {
+      let url = `http://twitter.com/share?text=&url=${this.web}&hashtags=stackoverflow,example,youssefusf&via=clonbg1`
+      openURL(url)
+    }
   },
   created() {
     const texto = require(`../markdowns/stories/${this.$route.params.markdown}.md`);
     this.post = texto.default;
     this.scrollToTop();
-
-  },
-  mounted(){
+    this.web = window.location.href.replace('#','%23')
   }
 };
-</script>
 
+</script>
 <style scoped>
-  a:link,
+a:link,
 a:visited,
 a:active {
   text-decoration: none;
   color: black;
 }
+
 </style>
