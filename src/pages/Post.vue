@@ -13,13 +13,14 @@
 </template>
 <script>
 import { openURL } from 'quasar'
-
+import { stories } from "../store/blog.json";
 export default {
   props: ["markdown"],
   data() {
     return {
       post: "",
-      web: ''
+      web: '',
+      categorias: ''
     };
   },
   watch: {},
@@ -31,7 +32,7 @@ export default {
       this.$router.go(-1);
     },
     twitter() {
-      let url = `http://twitter.com/share?text=&url=${this.web}&hashtags=stackoverflow,example,youssefusf&via=clonbg1`
+      let url = `http://twitter.com/share?url=${this.web}&hashtags=${this.categorias}&via=clonbg1`
       openURL(url)
     }
   },
@@ -40,6 +41,9 @@ export default {
     this.post = texto.default;
     this.scrollToTop();
     this.web = window.location.href.replace('#','%23')
+    let item = stories.find(element => element.id == this.$route.params.markdown);
+    let itemtags =item.categorias
+    this.categorias = itemtags.toString()
   }
 };
 
