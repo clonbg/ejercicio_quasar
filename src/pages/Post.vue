@@ -3,9 +3,7 @@
     <div class="row full-width reverse-wrap q-pa-xl q-px-xl">
       <div class="col q-px-sm full-height">
         <q-markdown :src="post" style="font-size: 120%"></q-markdown>
-        <q-btn color="purple" class="q-my-xl"><a href="http://twitter.com/share?text=Gracias%20Developando%20por%20el%20tutorial&via=Developando" target="_blank" class="text-white">Crear nuevo Tweet</a></q-btn>
-        <q-icon :name="twitterIcon" />
-        <q-icon name="img:my/path/to/some.svg" />
+        <a href="http://twitter.com/share?text=Gracias%20Developando%20por%20el%20tutorial&via=Developando" target="_blank"><q-icon size="xl" name="img:icons/twitter.png" class="q-pa-md"/>Comentar en twitter</a>
         <br />
         <q-btn color="secondary" label="Volver" @click="volver"> </q-btn>
 
@@ -42,4 +40,11 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+  a:link,
+a:visited,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+</style>
