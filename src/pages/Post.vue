@@ -33,6 +33,7 @@ export default {
     },
     twitter() {
       let url = `http://twitter.com/share?url=${this.web}&hashtags=${this.categorias}&via=clonbg1`
+      console.log(url)
       openURL(url)
     }
   },
