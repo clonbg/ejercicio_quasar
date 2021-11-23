@@ -12,7 +12,9 @@
         />
 
         <q-toolbar-title>
-          El blog de Clonbg
+          <div class="flex">
+            <span class="q-px-md">El blog de Clonbg</span>
+          <q-input rounded outlined v-model="busqueda" label="Rounded outlined" class="q-px-md" style="width:5px; height:3px"/></div>
         </q-toolbar-title>
 
         <div><img src="/del_blog/kiss.png" style="width:6rem" class="q-pa-md"/></div>
@@ -104,6 +106,7 @@ export default defineComponent({
 
   setup () {
     const leftDrawerOpen = ref(false)
+    let busqueda = ref('')
 
     return {
       essentialLinks: linksList,
