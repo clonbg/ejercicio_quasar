@@ -2,56 +2,33 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
-
+        <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
         <q-toolbar-title>
           <div class="flex">
             <span class="q-px-md">El blog de Clonbg</span>
           </div>
         </q-toolbar-title>
-<q-input borderless v-model="busqueda" label="Rounded outlined" class="q-px-md" style="width:5rem"/>
-        <div><img src="/del_blog/kiss.png" style="width:6rem" class="q-pa-md"/></div>
+        <q-input borderless v-model="busqueda" label="Rounded outlined" class="q-px-md" style="width:5rem" />
+        <div><img src="/del_blog/kiss.png" style="width:6rem" class="q-pa-md" /></div>
       </q-toolbar>
     </q-header>
-
-    <q-drawer
-      v-model="leftDrawerOpen"
-      show-if-above
-      bordered
-    >
+    <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
-        <q-item-label
-          header
-        >
+        <q-item-label header>
           Essential Links
         </q-item-label>
-
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
+        <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" />
       </q-list>
     </q-drawer>
-
     <q-page-container>
       <router-view />
     </q-page-container>
   </q-layout>
 </template>
-
 <script>
 import EssentialLink from 'components/EssentialLink.vue'
 
-const linksList = [
-  {
+const linksList = [{
     title: 'Docs',
     caption: 'quasar.dev',
     icon: 'school',
@@ -104,17 +81,28 @@ export default defineComponent({
     EssentialLink
   },
 
-  setup () {
+  setup() {
     const leftDrawerOpen = ref(false)
     let busqueda = ref('')
 
     return {
       essentialLinks: linksList,
       leftDrawerOpen,
-      toggleLeftDrawer () {
+      toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value
-      }
+      },
+      busqueda
+    }
+  },
+  watch: {
+    'busqueda': 'updateBusqueda'
+  },
+  methods: {
+    updateBusqueda() {
+      //console.log(this.busqueda)
+      this.$store.commit('user/updateBusqueda', this.busqueda)
     }
   }
 })
+
 </script>
