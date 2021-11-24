@@ -14,9 +14,9 @@
         <q-toolbar-title>
           <div class="flex">
             <span class="q-px-md">El blog de Clonbg</span>
-          <q-input rounded outlined v-model="busqueda" label="Rounded outlined" class="q-px-md" style="width:5px; height:3px"/></div>
+          </div>
         </q-toolbar-title>
-
+<q-input borderless v-model="busqueda" label="Rounded outlined" class="q-px-md" style="width:5rem"/>
         <div><img src="/del_blog/kiss.png" style="width:6rem" class="q-pa-md"/></div>
       </q-toolbar>
     </q-header>
