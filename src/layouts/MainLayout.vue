@@ -8,7 +8,7 @@
             <span class="q-px-md">El blog de Clonbg</span>
           </div>
         </q-toolbar-title>
-        <q-input borderless v-model="busqueda" label="Rounded outlined" class="q-px-md" style="width:5rem" />
+        <q-input borderless v-model="busqueda" label="Buscar" class="q-px-md" style="width:15rem" v-if="$route.path=='/'"/>
         <div><img src="/del_blog/kiss.png" style="width:6rem" class="q-pa-md" /></div>
       </q-toolbar>
     </q-header>
