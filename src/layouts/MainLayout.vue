@@ -8,8 +8,12 @@
             <span class="q-px-md">El blog de Clonbg</span>
           </div>
         </q-toolbar-title>
-        <q-input borderless v-model="busqueda" label="Buscar" class="q-px-md" style="width:15rem" v-if="$route.path=='/'"/>
-        <div><img src="/del_blog/kiss.png" style="width:6rem" class="q-pa-md" /></div>
+        <q-input borderless v-model="busqueda" label="Buscar" class="q-px-md" style="width:15rem" v-if="($route.path=='/') && (!verBusqueda)" />
+        <q-btn flat round dense icon="search" v-if="verBusqueda" class="q-mr-xs" @click="verBusqueda = false" />
+        <q-btn flat round dense icon="cancel" v-else class="q-mr-xs" @click="(verBusqueda = true) ; (busqueda = '')" />
+        <div>
+          <img src="/del_blog/kiss.png" style="width:6rem" class="q-pa-md" />
+        </div>
       </q-toolbar>
     </q-header>
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
@@ -84,6 +88,7 @@ export default defineComponent({
   setup() {
     const leftDrawerOpen = ref(false)
     let busqueda = ref('')
+    let verBusqueda = ref(true)
 
     return {
       essentialLinks: linksList,
@@ -91,7 +96,8 @@ export default defineComponent({
       toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value
       },
-      busqueda
+      busqueda,
+      verBusqueda
     }
   },
   watch: {
