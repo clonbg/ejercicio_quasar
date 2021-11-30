@@ -21,7 +21,7 @@
       ],
       "imagen": "/programa.png",
       "date": "29 de Agosto de 2021",
-      "title": "Minimizar al <i>tray</i> un programa hecho en <strong>PyQt5<strong>",
+      "title": "Minimizar al < i > tray < /i> un programa hecho en <strong>PyQt5<strong>",
       "description": "Como podeis ver en el post sobre <a href='https://clonbg.netlify.app/#/stories/crud_con_python' target='_blank'>Mi primer <i>CRUD</i> con <i>Python</i></a>, tenía hecho un programa que simplemente era un registro de usuarios implementado en <i>Python</i> con <i>PyQt5</i> y <i>Mysql3</i> como base..."
     },
     {

@@ -46,9 +46,15 @@ export default defineComponent({
   },
   watch: {},
   computed: {
+    filtroBusqueda() {
+      var entradas;
+      entradas = this.entrys.filter(post => post.title.includes(this.$store.state.user.busqueda) || post.description.includes(this.$store.state.user.busqueda))
+      // return this.products.filter(product => !product.category.indexOf(this.category))
+      return entradas
+    },
     filtroPaginacion() {
       var entradas;
-      entradas = this.entrys.slice(this.current * 10 - 10, this.current * 10);
+      entradas = this.filtroBusqueda.slice(this.current * 10 - 10, this.current * 10);
       //console.log(this.current, entradas);
       return entradas;
     }
