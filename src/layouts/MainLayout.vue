@@ -5,7 +5,7 @@
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
         <q-toolbar-title>
           <div class="flex">
-            <span class="q-px-md">El blog de Clonbg</span>
+            <span class="q-px-md cursor-pointer" @click="volver">El blog de Clonbg</span>
           </div>
         </q-toolbar-title>
         <q-input borderless v-model="busqueda" autofocus placeholder="Buscar" class="q-px-md" style="width : 15rem ; font-size : 1.2rem" v-if="($route.path=='/') && (!verBusqueda)" standout="text-black" />
@@ -116,6 +116,9 @@ export default defineComponent({
     },
     scrollToTop() {
       window.scrollTo(0, 0);
+    },
+    volver() {
+      this.$router.go(-1);
     },
   }
 })
