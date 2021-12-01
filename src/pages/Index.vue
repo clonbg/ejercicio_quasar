@@ -1,6 +1,5 @@
 <template>
   <q-page>
-    {{$store.state.user.busqueda}}
     <div class="flex flex-center q-pt-xl">
       <div class="row full-width reverse-wrap q-pa-xl q-px-xl" v-for="item in filtroPaginacion" :key="item.id" :id="item.id">
         <div class="col-sm-7 q-px-sm full-height">
@@ -65,11 +64,11 @@ export default defineComponent({
     },
     textoLimpio(texto) {
       texto = texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/<[^>]*>?/g, '')
-      return texto
+      return texto.trim()
     }
   },
   mounted() {
-    
+
   },
 });
 
