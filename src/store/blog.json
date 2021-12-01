@@ -1,422 +1,421 @@
 {
   "stories": [
-    {
-      "id": "script-autostart",
-      "categorias": [
-        "Linux",
-        "Scripts",
-        "Bash"
-      ],
-      "imagen": "/bash.png",
-      "date": "10 de Septiembre de 2021",
-      "title": "Script en <strong>bash</strong> que comprueba si hay internet y ejecuta unos programas",
-      "description": "Al arrancar mi sistema operativo y estar en un sitio sin conexión a internet algunos programas se ejecutaban igualmente dando lugar a fallos, evidentemente. Me decidí a crear un <i>script</i> que..."
-    },
-    {
-      "id": "pyqt5-icono",
-      "categorias": [
-        "Programación",
-        "Python",
-        "Aplicaciones"
-      ],
-      "imagen": "/programa.png",
-      "date": "29 de Agosto de 2021",
-      "title": "Minimizar al < i > tray < /i> un programa hecho en <strong>PyQt5<strong>",
-      "description": "Como podeis ver en el post sobre <a href='https://clonbg.netlify.app/#/stories/crud_con_python' target='_blank'>Mi primer <i>CRUD</i> con <i>Python</i></a>, tenía hecho un programa que simplemente era un registro de usuarios implementado en <i>Python</i> con <i>PyQt5</i> y <i>Mysql3</i> como base..."
-    },
-    {
-      "id": "zram",
-      "categorias": [
-        "Linux",
-        "Sistema"
-      ],
-      "imagen": "/zram.png",
-      "date": "23 de Julio de 2021",
-      "title": "Instalar <strong>Zram Swap</strong> en <i>Arch Linux</i>",
-      "description": "Primero hay que explicar que es esto y para que sirve. Según Wikipedia <strong>Zram</strong> es un módulo del núcleo <i>Linux</i> previamente llamado <i>compcache</i>. <strong>Zram</strong> incrementa el rendimiento evitando la..."
-    },
-    {
-      "id": "script-debian-updates",
-      "categorias": [
-        "Linux",
-        "Scripts"
-      ],
-      "imagen": "/script-debian-updates.png",
-      "date": "22 de Mayo de 2021",
-      "title": "Comprobar actualizaciones en <strong>Debian</strong>",
-      "description": "Cada vez que enciendo el ordenador, por costumbre, actualizo el sistema. Es una costumbre adquirida cuando he usado Arch Linux (todavía lo tengo en otros equipos), ya que este cada poquito tiempo tenía actualizaciones..."
-    },
-    {
-      "id": "docker-sin-sudo",
-      "categorias": [
-        "Linux",
-        "Terminal",
-        "Docker"
-      ],
-      "imagen": "/docker.png",
-      "date": "26 de Abril de 2021",
-      "title": "Usar <strong>docker</strong> con tu usuario sin <i>sudo</i>",
-      "description": "El como usar <strong>docker</strong> sin <i>sudo</i> es posiblemente una de las cosas que más veces he buscado en internet, nunca recuerdo como se hace. Por eso voy a ponerlo aquí para poder consultarlo..."
-    },
-    {
-      "id": "ouroboros",
-      "categorias": [
-        "Linux",
-        "Docker",
-        "Aplicaciones"
-      ],
-      "imagen": "/ouroboros.png",
-      "date": "13 de Abril de 2021",
-      "title": "Actualización automática de contenedores con <strong>Ouroboros</strong>",
-      "description": "La actuaización automática de contenedores te puede evitar mucho tiempo, por no hablar de los agujeros de seguridad de versiones antiguas. Además este método te mantiene informado de la..."
-    },
-    {
-      "id": "disown",
-      "categorias": [
-        "Linux",
-        "Terminal"
-      ],
-      "imagen": "/disown1.png",
-      "date": "26 de Marzo de 2021",
-      "title": "Como separar un proceso de la terminal con <strong>disown</strong>",
-      "description": "Según la <strong>Wikipedia</strong> en los shells Unix <i>ksh</i>, <i>bash</i>, <i>fish</i> y <i>zsh</i>, el comando incorporado disown se utiliza para eliminar trabajos de la tabla de..."
-    },
-    {
-      "id": "eliminar-recursiva",
-      "categorias": [
-        "Linux",
-        "Terminal",
-        "Scripts"
-      ],
-      "imagen": "/eliminar-recursiva.png",
-      "date": "16 de Marzo de 2021",
-      "title": "Eliminar archivos de forma recursiva",
-      "description": "Vamos a probar a eliminar archivos de forma recursiva desde nuestra terminal, y así, no tener que ir buscando por carpetas dichos archivos..."
-    },
-    {
-      "id": "url-radio",
-      "categorias": [
-        "Aplicaciones",
-        "Sonido"
-      ],
-      "imagen": "/url-radio.png",
-      "date": "19 de Febrero de 2021",
-      "title": "Conseguir la url para escuchar la radio online",
-      "description": "Vamos a ver como obtener al url de una radio web para poder escucharla en vlc, mpv, etc. Vamos a necesitar unicamente un navegador, yo voy a..."
-    },
-    {
-      "id": "autosubsync",
-      "categorias": [
-        "Terminal",
-        "Python",
-        "Aplicaciones"
-      ],
-      "imagen": "/autosubsync.PNG",
-      "date": "15 de Febrero de 2021",
-      "title": "Sincronizar automáticamente subtítulos utilizando el aprendizaje automático con <strong>autosubsync</strong>",
-      "description": "Muchas veces cuando tienes que sincronizar un subtítulo, bien por que es para otra versión del video o por el motivo que sea, tenemos que..."
-    },
-    {
-      "id": "copiar-mover-find",
-      "categorias": [
-        "Linux",
-        "Terminal",
-        "Scripts"
-      ],
-      "imagen": "/copiar-mover-find.png",
-      "date": "8 de Febrero de 2021",
-      "title": "Buscar archivos y copiar/mover con <i>find</i>",
-      "description": "Vamos a ver como copiar o mover archivos a la vez que los buscas. Este es el resultado de un problema, tuve que buscar archivos en la raiz de..."
-    },
-    {
-      "id": "docker-acestream",
-      "categorias": [
-        "Linux",
-        "Docker",
-        "Aplicaciones",
-        "Imagen"
-      ],
-      "imagen": "/docker-acestream.jpeg",
-      "date": "24 de Enero de 2021",
-      "title": "Como ver contenido <strong>acestream</strong> en <strong>Linux</strong>",
-      "description": "Voy a explicar como veo yo contenido <strong>acestream</strong> en <strong>Linux</strong>. No voy a entrar en que contenidos son legítimos ver y que no, cada uno es responsable..."
-    },
-    {
-      "id": "reinicio-programado",
-      "categorias": [
-        "Linux",
-        "Scripts"
-      ],
-      "imagen": "/crontab.png",
-      "date": "5 de Enero de 2021",
-      "title": "Programar el reinicio del ordenador de forma automática mediante <strong>Cron</strong>",
-      "description": "Últimamente he tenido bastantes problemas de conexión de la <i>Raspberry Pi</i>, cuando pasaban 2 ó 3 días sin reiniciarla (lo cual es algo habitual)..."
-    },
-    {
-      "id": "sudo-sin-intervencion",
-      "categorias": [
-        "Linux",
-        "Terminal",
-        "Scripts"
-      ],
-      "imagen": "/sudo-sin-intervencion.png",
-      "date": "17 de Diciembre de 2020",
-      "title": "Usar <strong>sudo</strong> sin intervención del usuario",
-      "description": "Ultimamente he necesitado ejecutar unos <i>scripts</i> y era un problema tener que escribir la contraseña de <strong>sudo</strong> cada vez que se ejecutaba. He buscado..."
-    },
-    {
-      "id": "watchtower",
-      "categorias": [
-        "Aplicaciones",
-        "Docker"
-      ],
-      "imagen": "/watchtower.png",
-      "date": "22 de Noviembre de 2020",
-      "title": "Mantener actualizados los contenedores <i>docker</i> con <strong>Watchtower</strong>",
-      "description": "Como os dije en la antrada anterior os voy a enseñar una herramienta que mantiene los contenedores <i>docker</i> actualizados. Esto se hace con..."
-    },
-    {
-      "id": "portainer",
-      "categorias": [
-        "Aplicaciones",
-        "Docker"
-      ],
-      "imagen": "/portainer.png",
-      "date": "7 de Noviembre de 2020",
-      "title": "<strong>Portainer</strong>, magnífico gestor para Docker",
-      "description": "Cuando pruebas <i>docker</i> una vez, te engancha por su facilidad y porque, al estar separado en contenedores no puede corromper tu sistema. Después..."
-    },
-    {
-      "id": "cursos-youtube",
-      "categorias": [
-        "VueJs",
-        "Javascript",
-        "Python",
-        "Programación"
-      ],
-      "imagen": "/cursos.jpg",
-      "date": "18 de Octubre de 2020",
-      "title": "Un par de cursos de <strong>Youtube</strong> sobre programación",
-      "description": "Hoy en día hay muchos sitios donde poder formarse, unos mejores y otros de menor calidad. Yo recomiendo <strong>Youtube</strong>, porque es rápido, lo tienes..."
-    },
-    {
-      "id": "nativefier",
-      "categorias": [
-        "Aplicaciones",
-        "Linux"
-      ],
-      "imagen": "/nativefier.png",
-      "date": "27 de Septiembre de 2020",
-      "title": "Crea tus propias aplicaciones web con <strong>Nativefier</strong>",
-      "description": "Esta es una maravillosa utilidad que convierte en aplicación <i>electrón</i> una dirección web. De esta manera puedes tener una aplicación de escritorio..."
-    },
-    {
-      "id": "literales",
-      "categorias": [
-        "VueJS",
-        "Javascript",
-        "Programación"
-      ],
-      "imagen": "/literales.png",
-      "date": "13 de Septiembre de 2020",
-      "title": "<i>Template literals</i> o <i>comillas invertidas</i>",
-      "description": "Como sabeis en JavaScript, para declarar un String hay que ponerlo entre comillas:<pre>const texto = 'me llamo Manuel'</pre>Desde la versión ES6 es..."
-    },
-    {
-      "id": "vuex-nuxt-example",
-      "categorias": [
-        "VueJS",
-        "Javascript",
-        "Programación"
-      ],
-      "imagen": "/vuex.png",
-      "date": "31 de Agosto de 2020",
-      "title": "Ejemplo de <strong>Vuex</strong> con <strong>Nuxt</strong>",
-      "description": "Si no sabéis lo que es <strong>Vuex</strong> o <strong>Nuxt</strong> os diré que '<strong>Vuex</strong> es un complemento oficial para <strong>Vue.js</strong> que ofrece un almacén de datos centralizado para..."
-    },
-    {
-      "id": "radicale",
-      "categorias": [
-        "Seguridad",
-        "Android"
-      ],
-      "imagen": "/radicale.png",
-      "date": "16 de Agosto de 2020",
-      "title": "Mi propio calendario y mi libreta de contactos con <strong>Radicale</strong>",
-      "description": "Os contaba en el anterior post la adquisición de mi nuevo terminal y de la 'necesidad' de alejarme de <stron>Google</strong>. Dos herramientas muy importantes..."
-    },
-    {
-      "id": "huawei-sin-google",
-      "categorias": [
-        "Linux",
-        "Privacidad",
-        "Android"
-      ],
-      "imagen": "/sin-google.png",
-      "date": "2 de Agosto de 2020",
-      "title": "<i>Huawei P40 Lite</i>, una opción sin <strong>Google</strong>",
-      "description": "Encontré en <a href='https://es.aliexpress.com/item/10000341399397.html?spm=a2g0o.productlist.0.0.4fdf27bcdj8PUZ&algo_pvid=1a888230-cb1b-4378-affc-950703921c11&algo_expid=1a888230-cb1b-4378-affc-950703921c11-20&btsid=0b0a01f815963739551712893eec56&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_' target='_blank'>Aliexpress</a> una oferta que no se podía rechazar, como diría 'El Padrino'. Se trataba del móvil de <i>Huawei P40 Lite</i>. Un aparato con..."
-    },
-    {
-      "id": "crud_con_python",
-      "categorias": [
-        "Git",
-        "Programación",
-        "Python"
-      ],
-      "imagen": "/crud.png",
-      "date": "18 de Julio de 2020",
-      "title": "Mi primer CRUD con Python",
-      "description": "He hecho un <strong>CRUD (Create, Read, Update and Delete)</strong> con <i>Python</i>, y diréis, porqué? Yo os lo contaré, este tipo de 'proyectitos' son fundamentales para..."
-    },
-    {
-      "id": "crear-servicio",
-      "categorias": [
-        "Linux",
-        "Scripts"
-      ],
-      "imagen": "/servicio.png",
-      "date": "21 de Junio de 2020",
-      "title": "Ejecutar un script al iniciar la Raspberry Pi",
-      "description": "Vamos a crear un servicio con <i>systemd</i> que se ejecute cada vez que se inicie la <strong>Raspberry Pi</strong>. En mi caso tengo instalado <a href='https://dietpi.com/' target='_blank'>dietpi</a>, pero cualquier..."
-    },
-    {
-      "id": "script-aviso-bateria",
-      "categorias": [
-        "Linux",
-        "Scripts",
-        "Aplicaciones"
-      ],
-      "imagen": "/bateria_sh.png",
-      "date": "1 de Junio de 2020",
-      "title": "<i>Script</i> para avisar de la carga de la batería",
-      "description": "Este fin de semana he instalado <strong>ArchLinux</strong> con el escritorio <strong>MATE</strong>, todo con ayuda de <a href='https://arcolinux.com/' target='_blank'>ArcoLinux</a>. Me he encontrado con que el <i>gestor de energía</i>..."
-    },
-    {
-      "id": "scroll-en-tmux",
-      "categorias": [
-        "Linux",
-        "terminal",
-        "Aplicaciones"
-      ],
-      "imagen": "/scrollTmux.png",
-      "date": "31 de Mayo de 2020",
-      "title": "Activar el <i>scroll</i> en <strong>Tmux</strong>",
-      "description": "Algo muy sencillo que me ha traído de cabeza ha sido activar el <i>scroll</i> en <strong>tmux</strong>. Me hacía falta porque en <strong>Linux</strong> es fundamental leer lo que pasa..."
-    },
-    {
-      "id": "tmux-sacale-mas-partido",
-      "categorias": [
-        "Linux",
-        "terminal",
-        "Aplicaciones"
-      ],
-      "imagen": "/tmux.png",
-      "date": "21 de Mayo de 2020",
-      "title": "<strong>Tmux</strong>, sácale más partido a tu terminal",
-      "description": "Os dije en el post dedicado a <i>Alacritty</i> que os iba a hablar de <strong>Tmux</strong>, pues lo prometido es deuda, vamos allá: <strong>Tmux</strong> según pone en su descripción..."
-    },
-    {
-      "id": "alacritty-la-terminal-mas-rapida",
-      "categorias": [
-        "Linux",
-        "terminal",
-        "Aplicaciones"
-      ],
-      "imagen": "/alacritty.png",
-      "date": "17 de Mayo de 2020",
-      "title": "<strong>Alacritty</strong>, la terminal más rápida",
-      "description": "<strong>Alacritty</strong> es un simple emulador de terminal, no es más. Eso si, es súper rápido. Lo había escuchado en el podcast de <a href='https://www.atareao.es/software/utilidades/emulador-de-terminal-mas-rapido/'>atareao.es</a> y decidí hacer la..."
-    },
-    {
-      "id": "primeros-pasos-python-qt",
-      "categorias": [
-        "Linux",
-        "Programación",
-        "Python"
-      ],
-      "imagen": "/qtdesigner.png",
-      "date": "05 de Mayo de 2020",
-      "title": "Primeros pasos con <i>PyQt</i> y <i>QtDesigner</i>. Primer programa con <i>Python</i>",
-      "description": "Vamos a crear nuestro primer programa gráfico con Python y PyQt, es mucho más sencillo de lo que parece. Lo primero que tenemos que hacer es..."
-    },
-    {
-      "id": "free-dns",
-      "categorias": [
-        "Redes",
-        "Linux"
-      ],
-      "imagen": "/free-dns.jpg",
-      "date": "03 de Mayo de 2020",
-      "title": "Conectarnos desde fuera de la red con <strong>free-dns</strong>",
-      "description": "<strong>free-dns</strong> es un servicio gratuito con el que nos podremos conectar a nuestro ordenador desde fuera de la red. Lo uso para conectarme a una..."
-    },
-    {
-      "id": "git-password",
-      "categorias": [
-        "Git",
-        "Terminal",
-        "Seguridad"
-      ],
-      "imagen": "/git-password.png",
-      "date": "11 de Abril de 2020",
-      "title": "Hacer que <i>git</i> no pida contraseña",
-      "description": "Se hace muy pesado, cada vez que hacemos un <i>push</i> tener que andar introduciendo las credenciales de <i>git</i>. Hay dos maneras de hacer..."
-    },
-    {
-      "id": "comandos-git",
-      "categorias": [
-        "Git",
-        "Terminal"
-      ],
-      "imagen": "/comandos-git.jpg",
-      "date": "4 de Abril de 2020",
-      "title": "Los comandos que necesito para trabajar con <i>git</i> desde la terminal",
-      "description": "No soy un gran especialista en <i>git</i>, de hecho con unos pocos comandos hago todo lo que necesito. Rara es la vez que he necesitado hacer..."
-    },
-    {
-      "id": "mkinitcpio",
-      "categorias": [
-        "Errores",
-        "Linux"
-      ],
-      "imagen": "/mkinitcpio.jpg",
-      "date": "26 de Marzo de 2020",
-      "title": "Possibly missing firmware for module: aic94xx, wd719x",
-      "description": "Soy usuario de Gnu/Linux en todos mis equipos, en todos en los que es posible. En mi sobremesa cada vez que compilaba el kernel o ejecutaba..."
-    },
-    {
-      "id": "buscar-en-ficheros",
-      "categorias": [
-        "Linux",
-        "Terminal"
-      ],
-      "imagen": "/search.png",
-      "date": "22 de Marzo de 2020",
-      "title": "Buscar archivos en Linux por nombre o contenido",
-      "description": "Para buscar archivos en nuestro sistema vamos a usar el comando <i>find</i>. Por ejemplo para buscar un archivo que contenga 'feet' en cualquier..."
-    },
-    {
-      "id": "chuleta-de-markdown",
-      "categorias": [
-        "Markdown"
-      ],
-      "imagen": "/markdown.png",
-      "date": "17 de Marzo de 2020",
-      "title": "Mi chuleta de Markdown",
-      "description": "Guardo como oro en paño un archivo donde consulto cualquier duda que tengo cuando estoy escribiendo en formato <b>markdown</b>. La voy a dejar aquí..."
-    },
-    {
-      "id": "manuales-vuejs-espanol",
-      "categorias": [
-        "Javascript",
-        "VueJS",
-        "Programación"
-      ],
-      "imagen": "/vuejs.jpg",
-      "date": "15 de Marzo de 2020",
-      "title": "Manuales de VueJS en español",
-      "description": "Tenía guardados un par de manuales de <i>VueJS</i> que en su momento me ayudaron mucho, sobretodo a entender el funcionamiento principal..."
-    }
-  ]
+  {
+    "id": "script-autostart",
+    "categorias": [
+      "Linux",
+      "Scripts",
+      "Bash"
+    ],
+    "imagen": "/bash.png",
+    "date": "10 de Septiembre de 2021",
+    "title": "Script en <strong>bash</strong> que comprueba si hay internet y ejecuta unos programas",
+    "description": "Al arrancar mi sistema operativo y estar en un sitio sin conexión a internet algunos programas se ejecutaban igualmente dando lugar a fallos, evidentemente. Me decidí a crear un <i>script</i> que..."
+  },
+  {
+    "id": "pyqt5-icono",
+    "categorias": [
+      "Programación",
+      "Python",
+      "Aplicaciones"
+    ],
+    "imagen": "/programa.png",
+    "date": "29 de Agosto de 2021",
+    "title": "Minimizar al <i>tray</i> un programa hecho en <strong>PyQt5<strong>",
+    "description": "Como podeis ver en el post sobre <a href='https://clonbg.netlify.app/#/stories/crud_con_python' target='_blank'>Mi primer <i>CRUD</i> con <i>Python</i></a>, tenía hecho un programa que simplemente era un registro de usuarios implementado en <i>Python</i> con <i>PyQt5</i> y <i>Mysql3</i> como base..."
+  },
+  {
+    "id": "zram",
+    "categorias": [
+      "Linux",
+      "Sistema"
+    ],
+    "imagen": "/zram.png",
+    "date": "23 de Julio de 2021",
+    "title": "Instalar <strong>Zram Swap</strong> en <i>Arch Linux</i>",
+    "description": "Primero hay que explicar que es esto y para que sirve. Según Wikipedia <strong>Zram</strong> es un módulo del núcleo <i>Linux</i> previamente llamado <i>compcache</i>. <strong>Zram</strong> incrementa el rendimiento evitando la..."
+  },
+  {
+    "id": "script-debian-updates",
+    "categorias": [
+      "Linux",
+      "Scripts"
+    ],
+    "imagen": "/script-debian-updates.png",
+    "date": "22 de Mayo de 2021",
+    "title": "Comprobar actualizaciones en <strong>Debian</strong>",
+    "description": "Cada vez que enciendo el ordenador, por costumbre, actualizo el sistema. Es una costumbre adquirida cuando he usado Arch Linux (todavía lo tengo en otros equipos), ya que este cada poquito tiempo tenía actualizaciones..."
+  },
+  {
+    "id": "docker-sin-sudo",
+    "categorias": [
+      "Linux",
+      "Terminal",
+      "Docker"
+    ],
+    "imagen": "/docker.png",
+    "date": "26 de Abril de 2021",
+    "title": "Usar <strong>docker</strong> con tu usuario sin <i>sudo</i>",
+    "description": "El como usar <strong>docker</strong> sin <i>sudo</i> es posiblemente una de las cosas que más veces he buscado en internet, nunca recuerdo como se hace. Por eso voy a ponerlo aquí para poder consultarlo..."
+  },
+  {
+    "id": "ouroboros",
+    "categorias": [
+      "Linux",
+      "Docker",
+      "Aplicaciones"
+    ],
+    "imagen": "/ouroboros.png",
+    "date": "13 de Abril de 2021",
+    "title": "Actualización automática de contenedores con <strong>Ouroboros</strong>",
+    "description": "La actuaización automática de contenedores te puede evitar mucho tiempo, por no hablar de los agujeros de seguridad de versiones antiguas. Además este método te mantiene informado de la..."
+  },
+  {
+    "id": "disown",
+    "categorias": [
+      "Linux",
+      "Terminal"
+    ],
+    "imagen": "/disown1.png",
+    "date": "26 de Marzo de 2021",
+    "title": "Como separar un proceso de la terminal con <strong>disown</strong>",
+    "description": "Según la <strong>Wikipedia</strong> en los shells Unix <i>ksh</i>, <i>bash</i>, <i>fish</i> y <i>zsh</i>, el comando incorporado disown se utiliza para eliminar trabajos de la tabla de..."
+  },
+  {
+    "id": "eliminar-recursiva",
+    "categorias": [
+      "Linux",
+      "Terminal",
+      "Scripts"
+    ],
+    "imagen": "/eliminar-recursiva.png",
+    "date": "16 de Marzo de 2021",
+    "title": "Eliminar archivos de forma recursiva",
+    "description": "Vamos a probar a eliminar archivos de forma recursiva desde nuestra terminal, y así, no tener que ir buscando por carpetas dichos archivos..."
+  },
+  {
+    "id": "url-radio",
+    "categorias": [
+      "Aplicaciones",
+      "Sonido"
+    ],
+    "imagen": "/url-radio.png",
+    "date": "19 de Febrero de 2021",
+    "title": "Conseguir la url para escuchar la radio online",
+    "description": "Vamos a ver como obtener al url de una radio web para poder escucharla en vlc, mpv, etc. Vamos a necesitar unicamente un navegador, yo voy a..."
+  },
+  {
+    "id": "autosubsync",
+    "categorias": [
+      "Terminal",
+      "Python",
+      "Aplicaciones"
+    ],
+    "imagen": "/autosubsync.PNG",
+    "date": "15 de Febrero de 2021",
+    "title": "Sincronizar automáticamente subtítulos utilizando el aprendizaje automático con <strong>autosubsync</strong>",
+    "description": "Muchas veces cuando tienes que sincronizar un subtítulo, bien por que es para otra versión del video o por el motivo que sea, tenemos que..."
+  },
+  {
+    "id": "copiar-mover-find",
+    "categorias": [
+      "Linux",
+      "Terminal",
+      "Scripts"
+    ],
+    "imagen": "/copiar-mover-find.png",
+    "date": "8 de Febrero de 2021",
+    "title": "Buscar archivos y copiar/mover con <i>find</i>",
+    "description": "Vamos a ver como copiar o mover archivos a la vez que los buscas. Este es el resultado de un problema, tuve que buscar archivos en la raiz de..."
+  },
+  {
+    "id": "docker-acestream",
+    "categorias": [
+      "Linux",
+      "Docker",
+      "Aplicaciones",
+      "Imagen"
+    ],
+    "imagen": "/docker-acestream.jpeg",
+    "date": "24 de Enero de 2021",
+    "title": "Como ver contenido <strong>acestream</strong> en <strong>Linux</strong>",
+    "description": "Voy a explicar como veo yo contenido <strong>acestream</strong> en <strong>Linux</strong>. No voy a entrar en que contenidos son legítimos ver y que no, cada uno es responsable..."
+  },
+  {
+    "id": "reinicio-programado",
+    "categorias": [
+      "Linux",
+      "Scripts"
+    ],
+    "imagen": "/crontab.png",
+    "date": "5 de Enero de 2021",
+    "title": "Programar el reinicio del ordenador de forma automática mediante <strong>Cron</strong>",
+    "description": "Últimamente he tenido bastantes problemas de conexión de la <i>Raspberry Pi</i>, cuando pasaban 2 ó 3 días sin reiniciarla (lo cual es algo habitual)..."
+  },
+  {
+    "id": "sudo-sin-intervencion",
+    "categorias": [
+      "Linux",
+      "Terminal",
+      "Scripts"
+    ],
+    "imagen": "/sudo-sin-intervencion.png",
+    "date": "17 de Diciembre de 2020",
+    "title": "Usar <strong>sudo</strong> sin intervención del usuario",
+    "description": "Ultimamente he necesitado ejecutar unos <i>scripts</i> y era un problema tener que escribir la contraseña de <strong>sudo</strong> cada vez que se ejecutaba. He buscado..."
+  },
+  {
+    "id": "watchtower",
+    "categorias": [
+      "Aplicaciones",
+      "Docker"
+    ],
+    "imagen": "/watchtower.png",
+    "date": "22 de Noviembre de 2020",
+    "title": "Mantener actualizados los contenedores <i>docker</i> con <strong>Watchtower</strong>",
+    "description": "Como os dije en la antrada anterior os voy a enseñar una herramienta que mantiene los contenedores <i>docker</i> actualizados. Esto se hace con..."
+  },
+  {
+    "id": "portainer",
+    "categorias": [
+      "Aplicaciones",
+      "Docker"
+    ],
+    "imagen": "/portainer.png",
+    "date": "7 de Noviembre de 2020",
+    "title": "<strong>Portainer</strong>, magnífico gestor para Docker",
+    "description": "Cuando pruebas <i>docker</i> una vez, te engancha por su facilidad y porque, al estar separado en contenedores no puede corromper tu sistema. Después..."
+  },
+  {
+    "id": "cursos-youtube",
+    "categorias": [
+      "VueJs",
+      "Javascript",
+      "Python",
+      "Programación"
+    ],
+    "imagen": "/cursos.jpg",
+    "date": "18 de Octubre de 2020",
+    "title": "Un par de cursos de <strong>Youtube</strong> sobre programación",
+    "description": "Hoy en día hay muchos sitios donde poder formarse, unos mejores y otros de menor calidad. Yo recomiendo <strong>Youtube</strong>, porque es rápido, lo tienes..."
+  },
+  {
+    "id": "nativefier",
+    "categorias": [
+      "Aplicaciones",
+      "Linux"
+    ],
+    "imagen": "/nativefier.png",
+    "date": "27 de Septiembre de 2020",
+    "title": "Crea tus propias aplicaciones web con <strong>Nativefier</strong>",
+    "description": "Esta es una maravillosa utilidad que convierte en aplicación <i>electrón</i> una dirección web. De esta manera puedes tener una aplicación de escritorio..."
+  },
+  {
+    "id": "literales",
+    "categorias": [
+      "VueJS",
+      "Javascript",
+      "Programación"
+    ],
+    "imagen": "/literales.png",
+    "date": "13 de Septiembre de 2020",
+    "title": "<i>Template literals</i> o <i>comillas invertidas</i>",
+    "description": "Como sabeis en JavaScript, para declarar un String hay que ponerlo entre comillas:<pre>const texto = 'me llamo Manuel'</pre>Desde la versión ES6 es..."
+  },
+  {
+    "id": "vuex-nuxt-example",
+    "categorias": [
+      "VueJS",
+      "Javascript",
+      "Programación"
+    ],
+    "imagen": "/vuex.png",
+    "date": "31 de Agosto de 2020",
+    "title": "Ejemplo de <strong>Vuex</strong> con <strong>Nuxt</strong>",
+    "description": "Si no sabéis lo que es <strong>Vuex</strong> o <strong>Nuxt</strong> os diré que '<strong>Vuex</strong> es un complemento oficial para <strong>Vue.js</strong> que ofrece un almacén de datos centralizado para..."
+  },
+  {
+    "id": "radicale",
+    "categorias": [
+      "Seguridad",
+      "Android"
+    ],
+    "imagen": "/radicale.png",
+    "date": "16 de Agosto de 2020",
+    "title": "Mi propio calendario y mi libreta de contactos con <strong>Radicale</strong>",
+    "description": "Os contaba en el anterior post la adquisición de mi nuevo terminal y de la 'necesidad' de alejarme de <stron>Google</strong>. Dos herramientas muy importantes..."
+  },
+  {
+    "id": "huawei-sin-google",
+    "categorias": [
+      "Linux",
+      "Privacidad",
+      "Android"
+    ],
+    "imagen": "/sin-google.png",
+    "date": "2 de Agosto de 2020",
+    "title": "<i>Huawei P40 Lite</i>, una opción sin <strong>Google</strong>",
+    "description": "Encontré en <a href='https://es.aliexpress.com/item/10000341399397.html?spm=a2g0o.productlist.0.0.4fdf27bcdj8PUZ&algo_pvid=1a888230-cb1b-4378-affc-950703921c11&algo_expid=1a888230-cb1b-4378-affc-950703921c11-20&btsid=0b0a01f815963739551712893eec56&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_' target='_blank'>Aliexpress</a> una oferta que no se podía rechazar, como diría 'El Padrino'. Se trataba del móvil de <i>Huawei P40 Lite</i>. Un aparato con..."
+  },
+  {
+    "id": "crud_con_python",
+    "categorias": [
+      "Git",
+      "Programación",
+      "Python"
+    ],
+    "imagen": "/crud.png",
+    "date": "18 de Julio de 2020",
+    "title": "Mi primer CRUD con Python",
+    "description": "He hecho un <strong>CRUD (Create, Read, Update and Delete)</strong> con <i>Python</i>, y diréis, porqué? Yo os lo contaré, este tipo de 'proyectitos' son fundamentales para..."
+  },
+  {
+    "id": "crear-servicio",
+    "categorias": [
+      "Linux",
+      "Scripts"
+    ],
+    "imagen": "/servicio.png",
+    "date": "21 de Junio de 2020",
+    "title": "Ejecutar un script al iniciar la Raspberry Pi",
+    "description": "Vamos a crear un servicio con <i>systemd</i> que se ejecute cada vez que se inicie la <strong>Raspberry Pi</strong>. En mi caso tengo instalado <a href='https://dietpi.com/' target='_blank'>dietpi</a>, pero cualquier..."
+  },
+  {
+    "id": "script-aviso-bateria",
+    "categorias": [
+      "Linux",
+      "Scripts",
+      "Aplicaciones"
+    ],
+    "imagen": "/bateria_sh.png",
+    "date": "1 de Junio de 2020",
+    "title": "<i>Script</i> para avisar de la carga de la batería",
+    "description": "Este fin de semana he instalado <strong>ArchLinux</strong> con el escritorio <strong>MATE</strong>, todo con ayuda de <a href='https://arcolinux.com/' target='_blank'>ArcoLinux</a>. Me he encontrado con que el <i>gestor de energía</i>..."
+  },
+  {
+    "id": "scroll-en-tmux",
+    "categorias": [
+      "Linux",
+      "terminal",
+      "Aplicaciones"
+    ],
+    "imagen": "/scrollTmux.png",
+    "date": "31 de Mayo de 2020",
+    "title": "Activar el <i>scroll</i> en <strong>Tmux</strong>",
+    "description": "Algo muy sencillo que me ha traído de cabeza ha sido activar el <i>scroll</i> en <strong>tmux</strong>. Me hacía falta porque en <strong>Linux</strong> es fundamental leer lo que pasa..."
+  },
+  {
+    "id": "tmux-sacale-mas-partido",
+    "categorias": [
+      "Linux",
+      "terminal",
+      "Aplicaciones"
+    ],
+    "imagen": "/tmux.png",
+    "date": "21 de Mayo de 2020",
+    "title": "<strong>Tmux</strong>, sácale más partido a tu terminal",
+    "description": "Os dije en el post dedicado a <i>Alacritty</i> que os iba a hablar de <strong>Tmux</strong>, pues lo prometido es deuda, vamos allá: <strong>Tmux</strong> según pone en su descripción..."
+  },
+  {
+    "id": "alacritty-la-terminal-mas-rapida",
+    "categorias": [
+      "Linux",
+      "terminal",
+      "Aplicaciones"
+    ],
+    "imagen": "/alacritty.png",
+    "date": "17 de Mayo de 2020",
+    "title": "<strong>Alacritty</strong>, la terminal más rápida",
+    "description": "<strong>Alacritty</strong> es un simple emulador de terminal, no es más. Eso si, es súper rápido. Lo había escuchado en el podcast de <a href='https://www.atareao.es/software/utilidades/emulador-de-terminal-mas-rapido/'>atareao.es</a> y decidí hacer la..."
+  },
+  {
+    "id": "primeros-pasos-python-qt",
+    "categorias": [
+      "Linux",
+      "Programación",
+      "Python"
+    ],
+    "imagen": "/qtdesigner.png",
+    "date": "05 de Mayo de 2020",
+    "title": "Primeros pasos con <i>PyQt</i> y <i>QtDesigner</i>. Primer programa con <i>Python</i>",
+    "description": "Vamos a crear nuestro primer programa gráfico con Python y PyQt, es mucho más sencillo de lo que parece. Lo primero que tenemos que hacer es..."
+  },
+  {
+    "id": "free-dns",
+    "categorias": [
+      "Redes",
+      "Linux"
+    ],
+    "imagen": "/free-dns.jpg",
+    "date": "03 de Mayo de 2020",
+    "title": "Conectarnos desde fuera de la red con <strong>free-dns</strong>",
+    "description": "<strong>free-dns</strong> es un servicio gratuito con el que nos podremos conectar a nuestro ordenador desde fuera de la red. Lo uso para conectarme a una..."
+  },
+  {
+    "id": "git-password",
+    "categorias": [
+      "Git",
+      "Terminal",
+      "Seguridad"
+    ],
+    "imagen": "/git-password.png",
+    "date": "11 de Abril de 2020",
+    "title": "Hacer que <i>git</i> no pida contraseña",
+    "description": "Se hace muy pesado, cada vez que hacemos un <i>push</i> tener que andar introduciendo las credenciales de <i>git</i>. Hay dos maneras de hacer..."
+  },
+  {
+    "id": "comandos-git",
+    "categorias": [
+      "Git",
+      "Terminal"
+    ],
+    "imagen": "/comandos-git.jpg",
+    "date": "4 de Abril de 2020",
+    "title": "Los comandos que necesito para trabajar con <i>git</i> desde la terminal",
+    "description": "No soy un gran especialista en <i>git</i>, de hecho con unos pocos comandos hago todo lo que necesito. Rara es la vez que he necesitado hacer..."
+  },
+  {
+    "id": "mkinitcpio",
+    "categorias": [
+      "Errores",
+      "Linux"
+    ],
+    "imagen": "/mkinitcpio.jpg",
+    "date": "26 de Marzo de 2020",
+    "title": "Possibly missing firmware for module: aic94xx, wd719x",
+    "description": "Soy usuario de Gnu/Linux en todos mis equipos, en todos en los que es posible. En mi sobremesa cada vez que compilaba el kernel o ejecutaba..."
+  },
+  {
+    "id": "buscar-en-ficheros",
+    "categorias": [
+      "Linux",
+      "Terminal"
+    ],
+    "imagen": "/search.png",
+    "date": "22 de Marzo de 2020",
+    "title": "Buscar archivos en Linux por nombre o contenido",
+    "description": "Para buscar archivos en nuestro sistema vamos a usar el comando <i>find</i>. Por ejemplo para buscar un archivo que contenga 'feet' en cualquier..."
+  },
+  {
+    "id": "chuleta-de-markdown",
+    "categorias": [
+      "Markdown"
+    ],
+    "imagen": "/markdown.png",
+    "date": "17 de Marzo de 2020",
+    "title": "Mi chuleta de Markdown",
+    "description": "Guardo como oro en paño un archivo donde consulto cualquier duda que tengo cuando estoy escribiendo en formato <b>markdown</b>. La voy a dejar aquí..."
+  },
+  {
+    "id": "manuales-vuejs-espanol",
+    "categorias": [
+      "Javascript",
+      "VueJS",
+      "Programación"
+    ],
+    "imagen": "/vuejs.jpg",
+    "date": "15 de Marzo de 2020",
+    "title": "Manuales de VueJS en español",
+    "description": "Tenía guardados un par de manuales de <i>VueJS</i> que en su momento me ayudaron mucho, sobretodo a entender el funcionamiento principal..."
+  }]
 }
