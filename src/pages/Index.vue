@@ -48,7 +48,7 @@ export default defineComponent({
   computed: {
     filtroBusqueda() {
       var entradas;
-      entradas = this.entrys.filter(post => post.title.includes(this.$store.state.user.busqueda) || post.description.includes(this.$store.state.user.busqueda))
+      entradas = this.entrys.filter(post => this.textoLimpio(post.title).includes(this.textoLimpio(this.$store.state.user.busqueda)) || this.textoLimpio(post.description).includes(this.textoLimpio(this.$store.state.user.busqueda)))
       // return this.products.filter(product => !product.category.indexOf(this.category))
       return entradas
     },
@@ -62,9 +62,15 @@ export default defineComponent({
   methods: {
     scrollToTop() {
       window.scrollTo(0, 0);
+    },
+    textoLimpio(texto) {
+      texto = texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/<[^>]*>?/g, '')
+      return texto
     }
   },
-  mounted() {},
+  mounted() {
+    
+  },
 });
 
 </script>
