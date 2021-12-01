@@ -67,9 +67,7 @@ export default defineComponent({
       return texto.trim()
     }
   },
-  mounted() {
-
-  },
+  mounted() {},
 });
 
 </script>

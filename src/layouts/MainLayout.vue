@@ -8,9 +8,9 @@
             <span class="q-px-md">El blog de Clonbg</span>
           </div>
         </q-toolbar-title>
-        <q-input borderless v-model="busqueda" autofocus label="Buscar" class="q-px-md" style="width:15rem" v-if="($route.path=='/') && (!verBusqueda)" />
-        <q-btn flat round dense icon="search" v-if="verBusqueda" class="q-mr-xs" @click="verBusqueda = false" />
-        <q-btn flat round dense icon="cancel" v-else class="q-mr-xs" @click="(verBusqueda = true) ; (busqueda = '')" />
+        <q-input borderless v-model="busqueda" autofocus placeholder="Buscar" class="q-px-md" style="width : 15rem ; font-size : 1.2rem" v-if="($route.path=='/') && (!verBusqueda)" standout="text-black" />
+        <q-btn flat round dense icon="search" v-if="($route.path=='/') && (verBusqueda)" class="q-mr-xs" @click="verBusqueda = false" />
+        <q-btn flat round dense icon="cancel" v-if="($route.path=='/') && (!verBusqueda)" class="q-mr-xs" @click="(verBusqueda = true) ; (busqueda = '') ; (scrollToTop())" />
         <div>
           <img src="/del_blog/kiss.png" style="width:6rem" class="q-pa-md" />
         </div>
@@ -101,13 +101,22 @@ export default defineComponent({
     }
   },
   watch: {
-    'busqueda': 'updateBusqueda'
+    'busqueda': 'updateBusqueda',
+    '$route.path': 'borrarBusqueda'
   },
   methods: {
     updateBusqueda() {
-      //console.log(this.busqueda)
       this.$store.commit('user/updateBusqueda', this.busqueda)
-    }
+    },
+    borrarBusqueda() {
+      if (this.$route.path != '/') {
+        this.busqueda = ''
+        this.verBusqueda = true
+      }
+    },
+    scrollToTop() {
+      window.scrollTo(0, 0);
+    },
   }
 })
 
