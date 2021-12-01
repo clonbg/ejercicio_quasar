@@ -8,7 +8,7 @@
             <span class="q-px-md">El blog de Clonbg</span>
           </div>
         </q-toolbar-title>
-        <q-input borderless v-model="busqueda" label="Buscar" class="q-px-md" style="width:15rem" v-if="($route.path=='/') && (!verBusqueda)" />
+        <q-input borderless v-model="busqueda" autofocus label="Buscar" class="q-px-md" style="width:15rem" v-if="($route.path=='/') && (!verBusqueda)" />
         <q-btn flat round dense icon="search" v-if="verBusqueda" class="q-mr-xs" @click="verBusqueda = false" />
         <q-btn flat round dense icon="cancel" v-else class="q-mr-xs" @click="(verBusqueda = true) ; (busqueda = '')" />
         <div>
