@@ -24,7 +24,7 @@
         </div>
       </div>
       <div class="flex flex-center q-pa-xl q-mx-auto">
-        <q-pagination v-model="current" :max="Math.floor(entrys.length / 10) + 1" input input-class="text-orange-10" @click="scrollToTop" />
+        <q-pagination v-model="current" :max="maxPaginas" input input-class="text-orange-10" @click="scrollToTop" />
       </div>
     </div>
   </q-page>
@@ -43,7 +43,9 @@ export default defineComponent({
       current: ref(1),
     };
   },
-  watch: {},
+  watch: {
+    'filtroBusqueda': 'resetCurrent'
+  },
   computed: {
     filtroBusqueda() {
       var entradas;
@@ -56,6 +58,15 @@ export default defineComponent({
       entradas = this.filtroBusqueda.slice(this.current * 10 - 10, this.current * 10);
       //console.log(this.current, entradas);
       return entradas;
+    },
+    maxPaginas() {
+      let num = this.filtroBusqueda.length
+      console.log(num)
+      if (num % 10 == 0) {
+        return num / 10
+      } else {
+        return Math.floor(num / 10) + 1
+      }
     }
   },
   methods: {
@@ -65,6 +76,9 @@ export default defineComponent({
     textoLimpio(texto) {
       texto = texto.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/<[^>]*>?/g, '')
       return texto.trim()
+    },
+    resetCurrent() {
+      this.current=1
     }
   },
   mounted() {},
