@@ -47,9 +47,12 @@ export default defineComponent({
     };
   },
   watch: {
-    'filtroBusqueda': 'resetCurrent'
+    'tamanyoFiltroBusqueda': 'resetCurrent'
   },
   computed: {
+    tamanyoFiltroBusqueda() {
+      return this.filtroBusqueda.length
+    },
     filtroBusqueda() {
       var entradas;
       entradas = this.entrys.filter(post => this.textoLimpio(post.title).includes(this.textoLimpio(this.$store.state.user.busqueda)) || this.textoLimpio(post.description).includes(this.textoLimpio(this.$store.state.user.busqueda)))
@@ -81,6 +84,7 @@ export default defineComponent({
     },
     resetCurrent() {
       this.current=1
+      this.scrollToTop()
     }
   },
   mounted() {},
