@@ -1,6 +1,6 @@
 <template>
   <q-page>
-    <div class="flex flex-center q-pt-xl">
+    <div class="flex flex-center q-pt-xl" v-if="filtroPaginacion.length>0">
       <div class="row full-width reverse-wrap q-pa-xl q-px-xl" v-for="item in filtroPaginacion" :key="item.id" :id="item.id">
         <div class="col-sm-7 q-px-sm full-height">
           <router-link :href="item.id" :to="{ path: item.id, params: { markdown: item.id } }">
@@ -23,9 +23,12 @@
           <img class="rounded-borders" :src="`./../../${item.id}${item.imagen}`" style="width: 100%" />
         </div>
       </div>
-      <div class="flex flex-center q-pa-xl q-mx-auto">
+      <div class="flex flex-center q-pa-xl">
         <q-pagination v-model="current" :max="maxPaginas" input input-class="text-orange-10" @click="scrollToTop" />
       </div>
+    </div>
+    <div class="flex flex-center q-mt-xl q-pt-xl" v-else>
+      <p class="text-h6 q-mt-xl q-pt-xl q-mx-md">No hay entradas relaccionadas con esta búsqueda</p>
     </div>
   </q-page>
 </template>
@@ -61,7 +64,6 @@ export default defineComponent({
     },
     maxPaginas() {
       let num = this.filtroBusqueda.length
-      console.log(num)
       if (num % 10 == 0) {
         return num / 10
       } else {
