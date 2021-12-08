@@ -1,5 +1,3 @@
-Cursos de youtube
-
 # Un par de cursos de **Youtube** sobre programación
 #### 18/010/2020
 
