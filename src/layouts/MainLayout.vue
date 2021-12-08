@@ -19,7 +19,7 @@
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
         <q-item-label header>
-          Mis Links
+          Links de utilidad
         </q-item-label>
         <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" />
       </q-list>
@@ -52,9 +52,9 @@ const linksList = [{
   },
   {
     title: 'RSS feed',
-    caption: '@QuasarFramework',
+    caption: 'RSS',
     icon: 'rss_feed',
-    link: 'https://facebook.quasar.dev'
+    link: `${window.location.origin}/feedClonbg_es.xml`
   }
 ];
 
@@ -71,6 +71,7 @@ export default defineComponent({
     const leftDrawerOpen = ref(false)
     let busqueda = ref('')
     let verBusqueda = ref(true)
+    let url = ref('')
 
     return {
       essentialLinks: linksList,
@@ -79,7 +80,8 @@ export default defineComponent({
         leftDrawerOpen.value = !leftDrawerOpen.value
       },
       busqueda,
-      verBusqueda
+      verBusqueda,
+      url
     }
   },
   watch: {
@@ -100,8 +102,12 @@ export default defineComponent({
       window.scrollTo(0, 0);
     },
     volver() {
-      this.$router.go(-1);
+      this.$router.push({ path: '/' });
     },
+  },
+  mounted() {
+    this.url = window.location
+    console.log('window: ', this.url)
   }
 })
 

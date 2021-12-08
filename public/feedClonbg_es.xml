@@ -1,0 +1,387 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Blog de Clonbg</title>
+<link>http://clonbg.es</link>
+<description>Blog de tecnología de Clonbg</description>
+ <atom:link href="https://clonbg.netlify.app/feedClonbg_es.xml" rel="self" type="application/rss+xml"/>
+<language>es-ES</language>
+<image>
+<title>Blog de Clonbg</title>
+<url>https://clonbg.netlify.app/del_blog/kiss.png</url>
+<link>http://clonbg.es</link>
+<width>144</width>
+<height>65</height>
+</image>
+<item>
+<title>Script en <strong>bash</strong> que comprueba si hay internet y ejecuta unos programas</title>
+<link>https://clonbg.netlify.app/#/script-autostart</link>
+<pubDate>Sun, 19 Sep 2021 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/script-autostart/bash.png" class="webfeedsFeaturedVisual" alt="" /><p>Al arrancar mi sistema operativo y estar en un sitio sin conexión a internet algunos programas se ejecutaban igualmente dando lugar a fallos, evidentemente. Me decidí a crear un <i>script</i> que...<br><a
+    href="https://clonbg.netlify.app/#/script-autostart"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/script-autostart/bash.png</guid>
+</item>
+<item>
+<title>Minimizar al <i>tray</i> un programa hecho en <strong>PyQt5</strong></title>
+	<link>https://clonbg.netlify.app/#/pyqt5-icono</link>
+	<pubDate>Sun, 29 Aug 2021 10:33:26 -0400</pubDate>
+  	<description><![CDATA[<img src="https://clonbg.netlify.app/pyqt5-icono/programa.png" class="webfeedsFeaturedVisual" alt="" /><p>Como podeis ver en el post sobre <a href='https://clonbg.netlify.app/#/crud_con_python' target='_blank'>Mi primer <i>CRUD</i> con <i>Python</i></a>, tenía hecho un programa que simplemente era un registro de usuarios implementado en <i>Python</i> con <i>PyQt5</i> y <i>Mysql3</i> como base...<br><a
+    href="https://clonbg.netlify.app/#/pyqt5-icono"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/pyqt5-icono/programa.png</guid>
+</item>
+<item>
+<title>Instalar <strong>Zram Swap</strong> en <i>Arch Linux</i></title>
+	<link>https://clonbg.netlify.app/#/zram</link>
+	<pubDate>Thu, 23 Jul 2021 10:33:26 -0400</pubDate>
+  	<description><![CDATA[<img src="https://clonbg.netlify.app/zram/zram.png" class="webfeedsFeaturedVisual" alt="" /><p>Primero hay que explicar que es esto y para que sirve. Según Wikipedia <strong>Zram</strong> es un módulo del núcleo <i>Linux</i> previamente llamado <i>compcache</i>. <strong>Zram</strong> incrementa el rendimiento evitando la...<br><a
+    href="https://clonbg.netlify.app/#/zram"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/zram/zram.png</guid>
+</item>
+<item>
+<title>Comprobar actualizaciones en <strong>Debian</strong></title>
+	<link>https://clonbg.netlify.app/#/script-debian-updates</link>
+	<pubDate>Sat, 22 May 2021 10:33:26 -0400</pubDate>
+  	<description><![CDATA[<img src="https://clonbg.netlify.app/script-debian-updates/script-debian-updates.png" class="webfeedsFeaturedVisual" alt="" /><p>Cada vez que enciendo el ordenador, por costumbre, actualizo el sistema. Es una costumbre adquirida cuando he usado Arch Linux (todavía lo tengo en otros equipos), ya que este cada poquito tiempo tenía actualizaciones...<br><a
+    href="https://clonbg.netlify.app/#/script-debian-updates"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/script-debian-updates/script-debian-updates.png</guid>
+</item>
+<item>
+<title>Usar docker con tu usuario sin sudo</title>
+<link>https://clonbg.netlify.app/#/docker-sin-sudo</link>
+<pubDate>Mon, 26 Apr 2021 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/docker-sin-sudo/docker.png" class="webfeedsFeaturedVisual" alt="" /><p>El como usar <strong>docker</strong> sin <i>sudo</i> es posiblemente una de las cosas que más veces he buscado en internet, nunca recuerdo como se hace. Por eso voy a ponerlo aquí para poder consultarlo...<br><a
+    href="https://clonbg.netlify.app/#/docker-sin-sudo"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/docker-sin-sudo/docker.png</guid>
+</item>
+<item>
+<title>Actualización automática de contenedores con <strong>Ouroboros</strong></title>
+	<link>https://clonbg.netlify.app/#/ouroboros</link>
+	<pubDate>Tue, 13 Apr 2021 10:33:26 -0400</pubDate>
+  	<description><![CDATA[<img src="https://clonbg.netlify.app/ouroboros/ouroboros.png" class="webfeedsFeaturedVisual" alt="" /><p>La actuaización automática de contenedores te puede evitar mucho tiempo, por no hablar de los agujeros de seguridad de versiones antiguas. Además este método te mantiene informado de la...<br><a
+    href="https://clonbg.netlify.app/#/ouroboros"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/ouroboros/ouroboros.png</guid>
+</item>
+<item>
+<title>Sincronizar automáticamente subtítulos utilizando el aprendizaje automático con autosubsync</title>
+<link>https://clonbg.netlify.app/#/autosubsync</link>
+<pubDate>Mon, 15 Feb 2021 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/autosubsync/autosubsync.PNG" class="webfeedsFeaturedVisual" alt="" /><p>Muchas veces cuando tienes que sincronizar un subtítulo, bien por que es para otra versión del video o por el motivo que sea, tenemos que...<br><a
+    href="https://clonbg.netlify.app/#/autosubsync"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/autosubsync/autosubsync.PNG</guid>
+</item>
+<item>
+<title>Como separar un proceso de la terminal con <strong>disown</strong></title>
+<link>https://clonbg.netlify.app/#/disown</link>
+<pubDate>Sun, 24 Jan 2021 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/disown/disown1.png" class="webfeedsFeaturedVisual" alt="" /><p>Según la <strong>Wikipedia</strong> en los shells Unix <i>ksh</i>, <i>bash</i>, <i>fish</i> y <i>zsh</i>, el comando incorporado disown se utiliza para eliminar trabajos de la tabla de...<br><a
+    href="https://clonbg.netlify.app/#/disown"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/disown/disown1.png</guid>
+</item>
+<item>
+<title>Eliminar archivos de forma recursiva</title>
+	<link>https://clonbg.netlify.app/#/eliminar-recursiva</link>
+	<pubDate>Tue, 16 mar 2021 10:33:26 -0400</pubDate>
+  	<description><![CDATA[<img src="https://clonbg.netlify.app/eliminar-recursiva/eliminar-recursiva.png" class="webfeedsFeaturedVisual" alt="" /><p>Vamos a probar a eliminar archivos de forma recursiva desde nuestra terminal, y así, no tener que ir buscando por carpetas dichos archivos...<br><a
+    href="https://clonbg.netlify.app/#/eliminar-recursiva"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/eliminar-recursiva/eliminar-recursiva.png</guid>
+</item>
+<item>
+<title>Conseguir la url para escuchar la radio online</title>
+	<link>https://clonbg.netlify.app/#/url-radio</link>
+	<pubDate>Sun, 22 Nov 2020 10:33:26 -0400</pubDate>
+  	<description><![CDATA[<img src="https://clonbg.netlify.app/url-radio/url-radio.png" class="webfeedsFeaturedVisual" alt="" /><p>Vamos a ver como obtener al url de una radio web para poder escucharla en vlc, mpv, etc. Vamos a necesitar unicamente un navegador, yo voy a...<br><a
+    href="https://clonbg.netlify.app/#/url-radio"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/url-radio/url-radio.png</guid>
+</item>
+<item>
+<title>Sincronizar automáticamente subtítulos utilizando el aprendizaje automático con autosubsync</title>
+<link>https://clonbg.netlify.app/#/autosubsync</link>
+<pubDate>Mon, 15 Feb 2021 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/autosubsync/autosubsync.PNG" class="webfeedsFeaturedVisual" alt="" /><p>Muchas veces cuando tienes que sincronizar un subtítulo, bien por que es para otra versión del video o por el motivo que sea, tenemos que...<br><a
+    href="https://clonbg.netlify.app/#/autosubsync"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/autosubsync/autosubsync.PNG</guid>
+</item>
+<item>
+<title>Buscar archivos y copiar/mover con find</title>
+	<link>https://clonbg.netlify.app/#/copiar-mover-find</link>
+	<pubDate>Mon, 08 Feb 2021 10:33:26 -0400</pubDate>
+  	<description><![CDATA[<img src="https://clonbg.netlify.app/copiar-mover-find/copiar-mover-find.png" class="webfeedsFeaturedVisual" alt="" /><p>Vamos a ver como copiar o mover archivos a la vez que los buscas. Este es el resultado de un problema, tuve que buscar archivos en la raiz de...<br><a
+    href="https://clonbg.netlify.app/#/copiar-mover-find"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/copiar-mover-find/copiar-mover-find.png</guid>
+</item>
+<item>
+<title>Como ver contenido <strong>acestream</strong> en <strong>Linux</strong></title>
+<link>https://clonbg.netlify.app/#/docker-acestream</link>
+<pubDate>Sun, 24 Jan 2021 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/docker-acestream/docker-acestream.jpeg" class="webfeedsFeaturedVisual" alt="" /><p>Voy a explicar como veo yo contenido <strong>acestream</strong> en <strong>Linux</strong>. No voy a entrar en que contenidos son legítimos ver y que no, cada uno es responsable...<br><a
+    href="https://clonbg.netlify.app/#/docker-acestream"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/docker-acestream/docker-acestream.jpeg</guid>
+</item>
+<item>
+<title>Programar el reinicio del ordenador de forma automática mediante <strong>Cron</strong></title>
+	<link>https://clonbg.netlify.app/#/reinicio-programado</link>
+	<pubDate>Tue, 05 Jan 2021 10:33:26 -0400</pubDate>
+  	<description><![CDATA[<img src="https://clonbg.netlify.app/reinicio-programado/crontab.png" class="webfeedsFeaturedVisual" alt="" /><p>Últimamente he tenido bastantes problemas de conexión de la <i>Raspberry Pi</i>, cuando pasaban 2 ó 3 días sin reiniciarla (lo cual es algo habitual)...<br><a
+    href="https://clonbg.netlify.app/#/reinicio-programado"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/reinicio-programado/crontab.png</guid>
+</item>
+<item>
+<title>Usar <strong>sudo</strong> sin intervención del usuario</title>
+<link>https://clonbg.netlify.app/#/sudo-sin-intervencion</link>
+<pubDate>Sat, 17 Dec 2020 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/sudo-sin-intervencion/sudo-sin-intervencion.png" class="webfeedsFeaturedVisual" alt="" /><p>Ultimamente he necesitado ejecutar unos <i>scripts</i> y era un problema tener que escribir la contraseña de <strong>sudo</strong> cada vez que se ejecutaba. He buscado...<br><a
+    href="https://clonbg.netlify.app/#/sudo-sin-intervencion"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/sudo-sin-intervencion/sudo-sin-intervencion.png</guid>
+</item>
+<item>
+<title>Mantener actualizados los contenedores Docker con Watchtower</title>
+	<link>https://clonbg.netlify.app/#/watchtower</link>
+	<pubDate>Sun, 22 Nov 2020 10:33:26 -0400</pubDate>
+  	<description><![CDATA[<img src="https://clonbg.netlify.app/watchtower/watchtower.png" class="webfeedsFeaturedVisual" alt="" /><p>Como os dije en la antrada anterior os voy a enseñar una herramienta que mantiene los contenedores <i>docker</i> actualizados. Esto se hace con...<br><a
+    href="https://clonbg.netlify.app/#/watchtower"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/watchtower/watchtower.png</guid>
+</item>
+<item>
+<title>Portainer, magnífico gestor para Docker</title>
+<link>https://clonbg.netlify.app/#/portainer</link>
+<pubDate>Sat, 07 Nov 2020 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/portainer/portainer.png" class="webfeedsFeaturedVisual" alt="" /><p>Cuando pruebas <i>docker</i> una vez, te engancha por su facilidad y porque, al estar separado en contenedores no puede corromper tu sistema. Después...<br><a
+    href="https://clonbg.netlify.app/#/portainer"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/portainer/portainer.png</guid>
+</item>
+<item>
+<title>Un par de cursos de Youtube sobre programación</title>
+<link>https://clonbg.netlify.app/#/cursos-youtube</link>
+<pubDate>Sun, 18 Oct 2020 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/cursos-youtube/cursos.jpg" class="webfeedsFeaturedVisual" alt="" /><p>Hoy en día hay muchos sitios donde poder formarse, unos mejores y otros de menor calidad. Yo recomiendo <strong>Youtube</strong>, porque es rápido, lo tienes...<br><a
+    href="https://clonbg.netlify.app/#/cursos-youtube"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/cursos-youtube/cursos.jpg</guid>
+</item>
+<item>
+<title>Crea tus propias aplicaciones web con Nativefier</title>
+	<link>https://clonbg.netlify.app/#/nativefier</link>
+	<pubDate>Sun, 27 Sep 2020 10:33:26 -0400</pubDate>
+  	<description><![CDATA[<img src="https://clonbg.netlify.app/nativefier/nativefier.png" class="webfeedsFeaturedVisual" alt="" /><p>Esta es una maravillosa utilidad que convierte en aplicación <i>electrón</i> una dirección web. De esta manera puedes tener una aplicación de escritorio...<br><a
+    href="https://clonbg.netlify.app/#/nativefier"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/nativefier/nativefier.png</guid>
+</item>
+<item>
+	<title>Template literals o comillas invertidas</title>
+	<link>https://clonbg.netlify.app/#/literales</link>
+	<pubDate>Sun, 13 Sep 2020 10:33:26 -0400</pubDate>
+		<description><![CDATA[<img src="https://clonbg.netlify.app/literales/literales.png" class="webfeedsFeaturedVisual" alt="" /><p>Como sabeis en JavaScript, para declarar un String hay que ponerlo entre comillas:<pre>const texto = 'me llamo Manuel'</pre>Desde la versión ES6 es...<br><a
+			href="https://clonbg.netlify.app/#/literales"
+			target="_blank"
+			>Leer más</a></p>]]></description>
+	<guid>https://clonbg.netlify.app/literales/literales.png</guid>
+</item>
+<item>
+	<title>Ejemplo de Vuex con Nuxt</title>
+	<link>https://clonbg.netlify.app/#/vuex-nuxt-example</link>
+	<pubDate>Sun, 31 Aug 2020 10:33:26 -0400</pubDate>
+		<description><![CDATA[<img src="https://clonbg.netlify.app/vuex-nuxt-example/vuex.png" class="webfeedsFeaturedVisual" alt="" /><p>Si no sabéis lo que es Vuex o Nuxt os diré que 'Vuex es un complemento oficial para Vue.js que ofrece un almacén de datos centralizado para...<br><a
+			href="https://clonbg.netlify.app/#/vuex-nuxt-example"
+			target="_blank"
+			>Leer más</a></p>]]></description>
+	<guid>https://clonbg.netlify.app/vuex-nuxt-example/vuex.png</guid>
+</item>
+<item>
+<title>Mi propio calendario y mi libreta de contactos con Radicale</title>
+<link>https://clonbg.netlify.app/#/radicale</link>
+<pubDate>Sun, 16 Aug 2020 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/radicale/radicale.png" class="webfeedsFeaturedVisual" alt="" /><p>Os contaba en el anterior post la adquisición de mi nuevo terminal y de la 'necesidad' de alejarme de <stron>Google</strong>. Dos herramientas muy importantes...<br><a
+    href="https://clonbg.netlify.app/#/radicale"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/radicale/radicale.png</guid>
+</item>
+<item>
+	<title>Huawei P40 Lite, una opción sin Google</title>
+	<link>https://clonbg.netlify.app/#/huawei-sin-google</link>
+	<pubDate>Sun, 02 Aug 2020 10:33:26 -0400</pubDate>
+		<description><![CDATA[<img src="http://clonbg.netlify.app/huawei-sin-google/sin-google.png" class="webfeedsFeaturedVisual" alt="" /><p>Encontré en <a href='https://es.aliexpress.com/item/10000341399397.html?spm=a2g0o.productlist.0.0.4fdf27bcdj8PUZ&algo_pvid=1a888230-cb1b-4378-affc-950703921c11&algo_expid=1a888230-cb1b-4378-affc-950703921c11-20&btsid=0b0a01f815963739551712893eec56&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_' target='_blank'>Aliexpress</a> una oferta que no se podía rechazar, como diría 'El Padrino'. Se trataba del móvil de <i>Huawei P40 Lite</i>. Un aparato con...<br><a
+			href="https://clonbg.netlify.app/#/huawei-sin-google"
+			target="_blank"
+			>Leer más</a></p>]]></description>
+	<guid>http://clonbg.netlify.app/huawei-sin-google/sin-google.png</guid>
+</item>
+<item>
+<title>Mi primer CRUD con Python</title>
+<link>https://clonbg.netlify.app/#/crud_con_python</link>
+<pubDate>Sat, 18 Jul 2020 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/crud_con_python/crud.png" class="webfeedsFeaturedVisual" alt="" /><p>He hecho un <strong>CRUD (Create, Read, Update and Delete)</strong> con <i>Python</i>, y diréis, porqué? Yo os lo contaré, este tipo de 'proyectitos' son fundamentales para...<br><a
+    href="https://clonbg.netlify.app/#/crud_con_python"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/crud_con_python/crud.png</guid>
+</item>
+<item>
+<title>Ejecutar un script al iniciar la Raspberry Pi</title>
+<link>https://clonbg.netlify.app/#/crear-servicio</link>
+<pubDate>Sun, 21 Jun 2020 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/crear-servicio/servicio.png" class="webfeedsFeaturedVisual" alt="" /><p>Vamos a crear un servicio con <i>systemd</i> que se ejecute cada vez que se inicie la <strong>Raspberry Pi</strong>. En mi caso tengo instalado <a href='https://dietpi.com/' target='_blank'>dietpi</a>, pero cualquier...<br><a
+    href="https://clonbg.netlify.app/#/crear-servicio"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/crear-servicio/servicio.png</guid>
+</item>
+<item>
+<title>Script para avisar de la carga de la batería</title>
+<link>https://clonbg.netlify.app/#/script-aviso-bateria</link>
+<pubDate>Mon, 01 Jun 2020 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/script-aviso-bateria/bateria_sh.png" class="webfeedsFeaturedVisual" alt="" /><p>Este fin de semana he instalado <strong>ArchLinux</strong> con el escritorio <strong>MATE</strong>, todo con ayuda de <a href='https://arcolinux.com/' target='_blank'>ArcoLinux</a>. Me he encontrado con que el <i>gestor de energía</i>...<br><a
+    href="https://clonbg.netlify.app/#/script-aviso-bateria"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/script-aviso-bateria/bateria_sh.png</guid>
+</item>
+<item>
+<title>Activar el scroll en Tmux</title>
+<link>https://clonbg.netlify.app/#/scroll-en-tmux</link>
+<pubDate>Sun, 31 May 2020 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/scroll-en-tmux/scrollTmux.png" class="webfeedsFeaturedVisual" alt="" /><p>Algo muy sencillo que me ha traído de cabeza ha sido activar el <i>scroll</i> en <strong>tmux</strong>. Me hacía falta porque en <strong>Linux</strong> es fundamental leer lo que pasa...<br><a
+    href="https://clonbg.netlify.app/#/scroll-en-tmux"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/scroll-en-tmux/scrollTmux.png</guid>
+</item>
+<item>
+<title>Tmux, sácale más partido a tu terminal</title>
+<link>https://clonbg.netlify.app/#/tmux-sacale-mas-partido</link>
+<pubDate>Thu, 21 May 2020 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/tmux-sacale-mas-partido/tmux.png" class="webfeedsFeaturedVisual" alt="" /><p>Os dije en el post dedicado a <i>Alacritty</i> que os iba a hablar de <strong>Tmux</strong>, pues lo prometido es deuda, vamos allá: <strong>Tmux</strong> según pone en su descripción...<br><a
+    href="https://clonbg.netlify.app/#/tmux-sacale-mas-partido"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/tmux-sacale-mas-partido/tmux.png</guid>
+</item>
+<item>
+<title>Alacritty, el terminal más rápido</title>
+<link>https://clonbg.netlify.app/#/alacritty-la-terminal-mas-rapida</link>
+<pubDate>Sun, 17 May 2020 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/alacritty-la-terminal-mas-rapida/alacritty.png" class="webfeedsFeaturedVisual" alt="" /><p><strong>Alacritty</strong> es un simple emulador de terminal, no es más. Eso si, es súper rápido. Lo había escuchado en el podcast de <a href='https://www.atareao.es/software/utilidades/emulador-de-terminal-mas-rapido/'>atareao.es</a> y decidí hacer la...<br><a
+    href="https://clonbg.netlify.app/#/alacritty-la-terminal-mas-rapida"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/alacritty-la-terminal-mas-rapida/alacritty.png</guid>
+</item>
+<item>
+<title>Primeros pasos con PyQt y QtDesigner. Primer programa con Python</title>
+<link>https://clonbg.netlify.app/#/primeros-pasos-python-qt</link>
+<pubDate>Tue, 05 May 2020 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/primeros-pasos-python-qt/qtdesigner.png" class="webfeedsFeaturedVisual" alt="" /><p>Vamos a crear nuestro primer programa gráfico con <i>Python</i> y <i>PyQt</i>, es mucho más sencillo de lo que parece. Lo primero que tenemos que hacer es...<br><a
+    href="https://clonbg.netlify.app/#/primeros-pasos-python-qt"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/primeros-pasos-python-qt/qtdesigner.png</guid>
+</item>
+<item>
+	<title>Conectarnos desde fuera de la red con free-dns</title>
+	<link>https://clonbg.netlify.app/#/free-dns</link>
+	<pubDate>Sun, 03 May 2020 10:33:26 -0400</pubDate>
+		<description><![CDATA[<img src="https://clonbg.netlify.app/free-dns/free-dns.jpg" class="webfeedsFeaturedVisual" alt="" /><p><strong>free-dns</strong> es un servicio gratuito con el que nos podremos conectar a nuestro ordenador desde fuera de la red. Lo uso para conectarme a una...<br><a
+			href="https://clonbg.netlify.app/#/free-dns"
+			target="_blank"
+			>Leer más</a></p>]]></description>
+	<guid>https://clonbg.netlify.app/free-dns/free-dns.jpg</guid>
+</item>
+<item>
+	<title>Hacer que git no pida contraseña</title>
+	<link>https://clonbg.netlify.app/#/git-password</link>
+	<pubDate>Sat, 11 Apr 2020 10:33:26 -0400</pubDate>
+		<description><![CDATA[<img src="https://clonbg.netlify.app/git-password/git-password.png" class="webfeedsFeaturedVisual" alt="" /><p>Se hace muy pesado, cada vez que hacemos un <i>push</i> tener que andar introduciendo las credenciales de <i>git</i>. Hay dos maneras de hacer...<br><a
+			href="https://clonbg.netlify.app/#/git-password"
+			target="_blank"
+			>Leer más</a></p>]]></description>
+	<guid>https://clonbg.netlify.app/git-password/git-password.png</guid>
+</item>
+<item>
+	<title>Los comandos que necesito para trabajar con git desde la terminal</title>
+	<link>https://clonbg.netlify.app/#/comandos-git</link>
+	<pubDate>Sat, 4 Apr 2020 10:33:26 -0400</pubDate>
+		<description><![CDATA[<img src="https://clonbg.netlify.app/comandos-git/comandos-git.jpg" class="webfeedsFeaturedVisual" alt="" /><p>No soy un gran especialista en <i>git</i>, de hecho con unos pocos comandos hago todo lo que necesito. Rara es la vez que he necesitado hacer...<br><a
+			href="https://clonbg.netlify.app/#/comandos-git"
+			target="_blank"
+			>Leer más</a></p>]]></description>
+	<guid>https://clonbg.netlify.app/comandos-git/comandos-git.jpg</guid>
+</item>
+<item>
+	<title>Possibly missing firmware for module: aic94xx, wd719x</title>
+	<link>https://clonbg.netlify.app/#/mkinitcpio</link>
+	<pubDate>Sun, 29 Mar 2020 10:33:26 -0400</pubDate>
+		<description><![CDATA[<img src="https://clonbg.netlify.app/mkinitcpio/mkinitcpio.jpg" class="webfeedsFeaturedVisual" alt="" /><p>Soy usuario de Gnu/Linux en todos mis equipos, en todos en los que es posible. En mi sobremesa cada vez que compilaba el kernel o ejecutaba...<br><a
+			href="https://clonbg.netlify.app/#/mkinitcpio"
+			target="_blank"
+			>Leer más</a></p>]]></description>
+	<guid>https://clonbg.netlify.app/mkinitcpio/mkinitcpio.jpg</guid>
+</item>
+<item>
+	<title>Buscar archivos en Linux por nombre o contenido</title>
+	<link>https://clonbg.netlify.app/#/buscar-en-ficheros</link>
+	<pubDate>Sun, 22 Mar 2020 10:33:26 -0400</pubDate>
+		<description><![CDATA[<img src="https://clonbg.netlify.app/buscar-en-ficheros/search.png" class="webfeedsFeaturedVisual" alt="" /><p>Para buscar archivos en nuestro sistema vamos a usar el comando <i>find</i>. Por ejemplo para buscar un archivo que contenga 'feet' en cualquier...<br><a
+			href="https://clonbg.netlify.app/#/buscar-en-ficheros"
+			target="_blank"
+			>Leer más</a></p>]]></description>
+	<guid>https://clonbg.netlify.app/buscar-en-ficheros/search.png</guid>
+</item>
+<item>
+	<title>Mi chuleta de markdown</title>
+	<link>https://clonbg.netlify.app/#/chuleta-de-markdown</link>
+	<pubDate>Tue, 17 Mar 2020 10:33:26 -0400</pubDate>
+		<description><![CDATA[<img src="https://clonbg.netlify.app/chuleta-de-markdown/markdown.png" class="webfeedsFeaturedVisual" alt="" /><p>Guardo como oro en paño un archivo donde consulto cualquier duda que tengo cuando estoy escribiendo en formato <b>markdown</b>. La voy a dejar aquí...<br><a
+			href="https://clonbg.netlify.app/#/chuleta-de-markdown"
+			target="_blank"
+			>Leer más</a></p>]]></description>
+	<guid>https://clonbg.netlify.app/chuleta-de-markdown/markdown.png</guid>
+</item>
+<item>
+	<title>Manuales de VueJS</title>
+	<link>https://clonbg.netlify.app/#/manuales-vuejs-espanol</link>
+	<pubDate>Sun, 15 Mar 2020 10:33:26 -0400</pubDate>
+		<description><![CDATA[<img src="https://clonbg.netlify.app/manuales-vuejs-espanol/vuejs.jpg" class="webfeedsFeaturedVisual" alt="" /><p>Tenía guardados un par de manuales de <i>VueJS</i> que en su momento me ayudaron mucho, sobretodo a entender el funcionamiento principal...<br><a
+			href="https://clonbg.netlify.app/#/manuales-vuejs-espanol"
+			target="_blank"
+			>Leer más</a></p>]]></description>
+	<guid>https://clonbg.netlify.app/manuales-vuejs-espanol/vuejs.jpg</guid>
+</item>
+</channel>
+</rss>
