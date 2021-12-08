@@ -1,8 +1,8 @@
 {
   "name": "ejercicio_quasar",
   "version": "0.0.1",
-  "description": "A Quasar Framework app",
-  "productName": "Quasar App",
+  "description": "El blog de Clonbg",
+  "productName": "El blog de Clonbg",
   "author": "Manuel Riquelme <clonbg@gmail.com>",
   "private": true,
   "scripts": {
