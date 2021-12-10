@@ -1,7 +1,7 @@
 # Minimizar al *tray* un programa hecho en **PyQt5**
 #### 29/08/2021
 
-Como podeis ver en el post sobre [Mi primer *CRUD* con *Python*](https://clonbg.netlify.app/#/stories/crud_con_python), tenía hecho un programa que simplemente era un registro de usuarios implementado en *Python* con *PyQt5* y *Mysql3* como base de datos. Funcionaba bien pero había dejado para más adelante algunas funciones (ya sabéis lo que pasa con estas cosas). Ahora he escrito unos cambios y tiene icono en el *tray* del sistema y se puede cerrar,  minimizar y maximizar a discrección.
+Como podeis ver en el post sobre [Mi primer *CRUD* con *Python*](https://clonbg.netlify.app/#/crud_con_python), tenía hecho un programa que simplemente era un registro de usuarios implementado en *Python* con *PyQt5* y *Mysql3* como base de datos. Funcionaba bien pero había dejado para más adelante algunas funciones (ya sabéis lo que pasa con estas cosas). Ahora he escrito unos cambios y tiene icono en el *tray* del sistema y se puede cerrar,  minimizar y maximizar a discrección.
 
 ![](https://clonbg.netlify.app/pyqt5-icono/icono-tray.png)
 

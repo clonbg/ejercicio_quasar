@@ -14,7 +14,7 @@ Decidí comprarlo y buscar soluciones a los servicios que usaba.
 - Correo seguí usando el de _Gmail_ pero a través de la aplicación que usa el sistema.
 - Teclado, a mi me gustaba *Gboard* y después de probar varios me decidí por *Go Keyboard* ya que tiene escritura *swife*
 
-Ahora viene lo más difícil, por un lado tener los documentos a mano como en el _Drive_, y por otro lado los contactos y el calendario. Esto lo solucioné con ayuda de mi servidor, la _Raspberry Pi 4_ que tengo instalada en casa y con la que puedo acceder desde fuera de mi red. Si no sabes como hacer esto puedes revisar esto [Conectarnos desde fuera de la red con free-dns](https://clonbg.netlify.app/#/stories/free-dns)
+Ahora viene lo más difícil, por un lado tener los documentos a mano como en el _Drive_, y por otro lado los contactos y el calendario. Esto lo solucioné con ayuda de mi servidor, la _Raspberry Pi 4_ que tengo instalada en casa y con la que puedo acceder desde fuera de mi red. Si no sabes como hacer esto puedes revisar esto [Conectarnos desde fuera de la red con free-dns](https://clonbg.netlify.app/#/free-dns)
 
 - Lo primero simplemente creé una carpeta llamada 'Documentos' en mi _Raspberry_, puse ahí todo lo que me hizo falta y accedo a ella a traves de _sftp_ con la plicación [_Cx Explorador de archivos_](https://apkpure.com/es/cx-file-explorer/com.cxinventor.file.explorer)
 - Lo de los contactos y el calendario es más difícil, os lo explicaré en el próximo post ;)

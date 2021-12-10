@@ -187,7 +187,7 @@ Líneas a tener en cuenta:
 - **hosts**, aquí va la ip del servidor
 - **filesystem_folder**, la dirección donde se ubican los calendarios
 
-Solo falta entrar en la web [localhost](http:localhost:5232), o en la dirección Ip del servidor y crear vuestro calendario y vuestra libreta de direcciones, instalar **DAV<sub>x<sup>5</sup></sub>** en vuestro móvil y empezar a usarlo. Si quieres que se actualice fuera de casa échale un ojo [aquí](https://clonbg.netlify.app/#/stories/free-dns), además acuerdate de abrir el puerto *5232* en vuestro router.
+Solo falta entrar en la web [localhost](http:localhost:5232), o en la dirección Ip del servidor y crear vuestro calendario y vuestra libreta de direcciones, instalar **DAV<sub>x<sup>5</sup></sub>** en vuestro móvil y empezar a usarlo. Si quieres que se actualice fuera de casa échale un ojo [aquí](https://clonbg.netlify.app/#/free-dns), además acuerdate de abrir el puerto *5232* en vuestro router.
 
 
 Salu2
