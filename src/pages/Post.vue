@@ -4,7 +4,7 @@
       <div class="col q-px-sm full-height">
         <q-markdown :src="post" style="font-size: 120%"></q-markdown>
         <q-btn color="secondary" label="Volver" @click="volver" class="q-my-sm"></q-btn>
-        <q-icon size="xl" name="img:icons/twitter.png" class="cursor-pointer float-right" @click="twitter" />
+        <q-icon size="xl" name="img:icons/twitter.png" class="cursor-pointer float-right q-mr-md" @click="twitter" />
       </div>
     </div>
   </q-page>
@@ -27,7 +27,7 @@ export default {
       window.scrollTo(0, 0);
     },
     volver() {
-      this.$router.go(-1);
+      this.$router.push({ path: '/' });
     },
     twitter() {
       let url = `http://twitter.com/share?url=${this.web}&hashtags=${this.categorias}&via=clonbg1`
