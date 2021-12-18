@@ -1,5 +1,16 @@
 {
   "stories": [
+    {
+    "id": "nuevo-blog",
+    "categorias": [
+      "Linux",
+      "Scripts"
+    ],
+    "imagen": "/nuevo.png",
+    "date": "22 de Mayo de 2021",
+    "title": "Comprobar actualizaciones en <strong>Debian</strong>",
+    "description": "Cada vez que enciendo el ordenador, por costumbre, actualizo el sistema. Es una costumbre adquirida cuando he usado Arch Linux (todavía lo tengo en otros equipos), ya que este cada poquito tiempo tenía actualizaciones..."
+  },
   {
     "id": "script-autostart",
     "categorias": [
