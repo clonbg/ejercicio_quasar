@@ -14,6 +14,16 @@
 <height>65</height>
 </image>
 <item>
+<title>Nuevo <i>Blog</i> programado desde 0</title>
+<link>https://clonbg.netlify.app/#/nuevo-blog</link>
+<pubDate>Wed, 22 Dec 2021 10:33:26 -0400</pubDate>
+  <description><![CDATA[<img src="https://clonbg.netlify.app/nuevo-blog/nuevo.png" class="webfeedsFeaturedVisual" alt="" /><p>Cómo podéis ver hace tiempo que no publico y es que se me ha ocurrido rehacer el <strong>Blog de Clonbg</strong> desde cero. Está hecho con <a href='https://quasar.dev/'  target='_blank'>quasar</a> qué es un <i>framework</i> para <i>Vuejs</i>. Tenéis todo el código publicado en...<br><a
+    href="https://clonbg.netlify.app/#/nuevo-blog"
+    target="_blank"
+    >Leer más</a></p>]]></description>
+<guid>https://clonbg.netlify.app/nuevo-blog/nuevo.png</guid>
+</item>
+<item>
 <title>Script en <strong>bash</strong> que comprueba si hay internet y ejecuta unos programas</title>
 <link>https://clonbg.netlify.app/#/script-autostart</link>
 <pubDate>Sun, 19 Sep 2021 10:33:26 -0400</pubDate>
