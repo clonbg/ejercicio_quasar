@@ -1,10 +1,21 @@
 {
   "stories": [
-    {
+  {
+    "id": "grabar-dd",
+    "categorias": [
+      "Linux",
+      "Terminal", "Bash"
+    ],
+    "imagen": "/dd.jpg",
+    "date": "10 de Enero de 2022",
+    "title": "Grabar una <i>iso</i> en un Usb desde la terminal con <strong>dd</strong>",
+    "description": "Desde mi experiencia, la mejor manera de grabar una imagen <i>iso</i> en un Usb es desde la terminal, con el comando <strong>dd</strong>. Es muy útil para no tener que quemar un DVD o un CD. El primer paso es saber el destino..."
+  },
+  {
     "id": "nuevo-blog",
     "categorias": [
       "Linux",
-      "VueJS","Markdown","Programación"
+      "VueJS", "Markdown", "Programación"
     ],
     "imagen": "/nuevo.png",
     "date": "22 de Diciembre de 2021",
