@@ -1,7 +1,7 @@
 <template>
 	<q-page>
 		<div class="flex flex-center q-pt-xl" v-if="filtroPaginacion.length>0">
-			<div class="row full-width reverse-wrap q-pa-xl q-px-xl" v-for="item in filtroPaginacion" :key="item.id" :id="item.id">
+			<div class="row full-width reverse-wrap margenes" v-for="item in filtroPaginacion" :key="item.id" :id="item.id">
 				<div class="col-sm-7 q-px-sm full-height">
 					<router-link :href="item.id" :to="{ path: item.id, params: { markdown: item.id } }">
 						<div class="text-h5 q-mt-sm q-mb-xs" v-html="item.title"></div>
@@ -97,6 +97,10 @@ a:visited,
 a:active {
 	text-decoration: none;
 	color: black;
+}
+.margenes{
+	padding: 6vh 5vw 6vh 5vw
+
 }
 
 </style>

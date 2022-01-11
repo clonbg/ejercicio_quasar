@@ -1,6 +1,6 @@
 <template>
 	<q-page class="flex flex-center q-pt-xl">
-		<div class="row full-width reverse-wrap q-pa-xl q-px-xl">
+		<div class="row full-width reverse-wrap margenes">
 			<div class="col q-px-sm full-height">
 				<q-markdown :src="post" style="font-size: 120%"></q-markdown>
 				<q-btn color="secondary" label="Volver" @click="volver" class="q-my-sm"></q-btn>
@@ -53,6 +53,10 @@ a:visited,
 a:active {
 	text-decoration: none;
 	color: black;
+}
+.margenes{
+	padding: 6vh 5vw 6vh 5vw
+
 }
 
 </style>
