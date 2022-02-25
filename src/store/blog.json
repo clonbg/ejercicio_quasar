@@ -9,7 +9,7 @@
       "imagen": "/cpu.jpeg",
       "date": "25 de Febrero de 2022",
       "title": "Consumo alto de <i>CPU</i> cuando la <strong>Raspberry Pi</strong> trabaja desde un <strong>SSD</strong>",
-      "description": "Cada vez que enciendo el ordenador, por costumbre, actualizo el sistema. Es una costumbre adquirida cuando he usado Arch Linux (todavía lo tengo en otros equipos), ya que este cada poquito tiempo tenía actualizaciones..."
+      "description": "Desde hace un tiempo tengo la <strong>Raspberry Pi 4 B</strong> como servidor personal, con un montón de servicios: notas, calendario, vscode, etc... Seguí un tutorial para que arrancara desde un dispositivo <i>SSD</i>..."
     },
     {
       "id": "grabar-dd",
