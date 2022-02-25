@@ -19,7 +19,7 @@
     ],
     "imagen": "/nuevo.png",
     "date": "22 de Diciembre de 2021",
-    "title": "Nuevo <i>Blog</i> programado desde 0 con quasar.dev",
+    "title": "Nuevo <i>Blog</i> programado desde 0 con <strong>quasar.dev</strong>",
     "description": "Cómo podéis ver hace tiempo que no publico y es que se me ha ocurrido rehacer el <strong>Blog de Clonbg</strong> desde cero. Está hecho con <a href='https://quasar.dev/'  target='_blank'>quasar</a> qué es un <i>framework</i> para <i>Vuejs</i>. Tenéis todo el código publicado en..."
   },
   {
