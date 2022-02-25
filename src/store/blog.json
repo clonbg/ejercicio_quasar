@@ -1,6 +1,17 @@
 {
   "stories": [
     {
+      "id": "consumo-ssd-pi",
+      "categorias": [
+        "Linux",
+        "Raspberry"
+      ],
+      "imagen": "/cpu.jpeg",
+      "date": "25 de Febrero de 2022",
+      "title": "Consumo alto de <i>CPU</i> cuando la <strong>Raspberry Pi</strong> trabaja desde un <strong>SSD</strong>",
+      "description": "Cada vez que enciendo el ordenador, por costumbre, actualizo el sistema. Es una costumbre adquirida cuando he usado Arch Linux (todavía lo tengo en otros equipos), ya que este cada poquito tiempo tenía actualizaciones..."
+    },
+    {
       "id": "grabar-dd",
       "categorias": [
         "Linux",
