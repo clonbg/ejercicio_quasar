@@ -18,12 +18,12 @@
       <link>https://clonbg.netlify.app/#/consumo-ssd-pi</link>
       <pubDate>Fri, 25 Feb 2022 10:33:26 -0400</pubDate>
       <description>
-        <![CDATA[<img src="https://clonbg.netlify.app/consumo-ssd-pi/cpu.jpeg" class="webfeedsFeaturedVisual" alt="" /><p>Desde hace un tiempo tengo la Raspberry Pi 4 B como servidor personal, con un montón de servicios: notas, calendario, vscode, etc... Seguí un tutorial para que arrancara desde un dispositivo SSD...<br><a
+        <![CDATA[<img src="https://clonbg.netlify.app/consumo-ssd-pi/cpu.png" class="webfeedsFeaturedVisual" alt="" /><p>Desde hace un tiempo tengo la Raspberry Pi 4 B como servidor personal, con un montón de servicios: notas, calendario, vscode, etc... Seguí un tutorial para que arrancara desde un dispositivo SSD...<br><a
     href="https://clonbg.netlify.app/#/consumo-ssd-pi"
     target="_blank"
     >Leer más</a></p>]]>
       </description>
-      <guid>https://clonbg.netlify.app/consumo-ssd-pi/cpu.jpeg</guid>
+      <guid>https://clonbg.netlify.app/consumo-ssd-pi/cpu.png</guid>
     </item>
     <item>
       <title>Grabar una <i>iso</i> en un Usb desde la terminal con <strong>dd</strong></title>
