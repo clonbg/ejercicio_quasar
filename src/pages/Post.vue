@@ -46,15 +46,19 @@ export default {
     },
   },
   created() {
-    const texto = require(`../markdowns/stories/${this.$route.params.markdown}.md`);
-    this.post = texto.default;
-    this.scrollToTop();
-    this.web = window.location.href.replace("#", "%23");
-    let item = stories.find(
-      (element) => element.id == this.$route.params.markdown
-    );
-    let itemtags = item.categorias;
-    this.categorias = itemtags.toString();
+    try {
+      const texto = require(`../markdowns/stories/${this.$route.params.markdown}.md`);
+      this.post = texto.default;
+      this.scrollToTop();
+      this.web = window.location.href.replace("#", "%23");
+      let item = stories.find(
+        (element) => element.id == this.$route.params.markdown
+      );
+      let itemtags = item.categorias;
+      this.categorias = itemtags.toString();
+    } catch (error) {
+      this.$router.push({ path: "*" });
+    }
   },
 };
 </script>
