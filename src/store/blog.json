@@ -1,6 +1,14 @@
 {
   "stories": [
     {
+      "id": "aprender-django",
+      "categorias": ["Programación","Python"],
+      "imagen": "/aprender-django.jpg",
+      "date": "18 de Octubre de 2022",
+      "title": "Aprender Django",
+      "description": "Últimamente he estado ocupado en proyecto para una pequeña empresa. El <i>backend</i> era un reto para mi, estuve mirando posibles soluciones y al final me decidí por <strong>Django</strong>. Dejo aquí una recopilación de recursos que..."
+    },
+    {
       "id": "consumo-ssd-pi",
       "categorias": ["Linux", "Raspberry"],
       "imagen": "/cpu.jpeg",

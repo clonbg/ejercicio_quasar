@@ -14,6 +14,18 @@
       <height>65</height>
     </image>
     <item>
+      <title>Aprender Django</title>
+      <link>https://clonbg.netlify.app/#/aprender-django</link>
+      <pubDate>Tue, 18 Oct 2022 10:33:26 -0400</pubDate>
+      <description>
+        <![CDATA[<img src="https://clonbg.netlify.app/aprender-django/aprender-django.jpg" class="webfeedsFeaturedVisual" alt="" /><p>Últimamente he estado ocupado en proyecto para una pequeña empresa. El <i>backend</i> era un reto para mi, estuve mirando posibles soluciones y al final me decidí por <strong>Django</strong>. Dejo aquí una recopilación de recursos que...<br><a
+    href="https://clonbg.netlify.app/#/aprender-django"
+    target="_blank"
+    >Leer más</a></p>]]>
+      </description>
+      <guid>https://clonbg.netlify.app/aprender-django/aprender-django.jpg</guid>
+    </item>
+    <item>
       <title>Consumo alto de CPU cuando la Raspberry Pi trabaja desde un SSD</title>
       <link>https://clonbg.netlify.app/#/consumo-ssd-pi</link>
       <pubDate>Fri, 25 Feb 2022 10:33:26 -0400</pubDate>
