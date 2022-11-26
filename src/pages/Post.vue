@@ -11,7 +11,7 @@
         ></q-btn>
         <q-icon
           size="xl"
-          name="img:icons/twitter.png"
+          name="img:icons/mastodon.png"
           class="cursor-pointer float-right q-mr-md"
           @click="twitter"
         />
@@ -40,7 +40,7 @@ export default {
       this.$router.push({ path: "/" });
     },
     twitter() {
-      let url = `http://twitter.com/share?url=${this.web}&hashtags=${this.categorias}&via=clonbg1`;
+      let url = `https://masto.es/publish?text=@clonbg@masto.es - ${this.web} |`;
       console.log(url);
       openURL(url);
     },
