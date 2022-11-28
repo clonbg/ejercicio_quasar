@@ -45,10 +45,10 @@ const linksList = [{
 		link: 'https://github.com/clonbg'
 	},
 	{
-		title: 'Twitter',
-		caption: '@clonbg1',
+		title: 'Mastodon',
+		caption: '@clonbg@masto.es',
 		icon: 'insert_comment',
-		link: 'https://twitter.com/clonbg1'
+		link: 'https://masto.es/@clonbg'
 	},
 	{
 		title: 'RSS feed',
