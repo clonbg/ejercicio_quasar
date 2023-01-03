@@ -14,6 +14,18 @@
       <height>65</height>
     </image>
     <item>
+      <title>Mi propio servidor <i>Git</i> gracias a <i>Docker</i></title>
+      <link>https://clonbg.netlify.app/#/gogs-docker</link>
+      <pubDate>Tue, 3 Jan 2023 10:33:26 -0400</pubDate>
+      <description>
+        <![CDATA[<img src="https://clonbg.netlify.app/grabar-dd/dd.jpg" class="webfeedsFeaturedVisual" alt="" /><p>.Antes de nada, decir que tener mi propio servidor de <i>Git</i> instalado en mi equipo puede no ser una buena idea, ya que tienes que ocuparte tu mismo de los backups y mantenerlo, ya que no se encuentra en ningún otro sitio. A parte de..<br><a
+    href="https://clonbg.netlify.app/#/gogs-docker"
+    target="_blank"
+    >Leer más</a></p>]]>
+      </description>
+      <guid>https://clonbg.netlify.app/gogs-docker/gogs.png</guid>
+    </item>
+    <item>
       <title>Aprender Django</title>
       <link>https://clonbg.netlify.app/#/aprender-django</link>
       <pubDate>Tue, 18 Oct 2022 10:33:26 -0400</pubDate>

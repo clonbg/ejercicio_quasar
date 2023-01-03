@@ -1,8 +1,16 @@
 {
   "stories": [
     {
+      "id": "gogs-docker",
+      "categorias": ["Git", "Programación", "docker"],
+      "imagen": "/gogs.png",
+      "date": "3 de Enero de 2023",
+      "title": "Mi propio servidor <i>Git</i> gracias a <i>Docker</i>",
+      "description": "Antes de nada, decir que tener mi propio servidor de <i>Git</i> instalado en mi equipo puede no ser una buena idea, ya que tienes que ocuparte tu mismo de los backups y mantenerlo, ya que no se encuentra en ningún otro sitio. A parte de..."
+    },
+    {
       "id": "aprender-django",
-      "categorias": ["Programación","Python"],
+      "categorias": ["Programación", "Python"],
       "imagen": "/aprender-django.jpg",
       "date": "18 de Octubre de 2022",
       "title": "Aprender Django",
