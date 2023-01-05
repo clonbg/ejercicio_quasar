@@ -2,7 +2,11 @@
   "stories": [
     {
       "id": "gogs-docker",
-      "categorias": ["Git", "Programación", "docker"],
+      "categorias": [
+        "Git",
+        "Programación",
+        "docker"
+      ],
       "imagen": "/gogs.png",
       "date": "3 de Enero de 2023",
       "title": "Mi propio servidor <i>Git</i> gracias a <i>Docker</i>",
@@ -10,7 +14,10 @@
     },
     {
       "id": "aprender-django",
-      "categorias": ["Programación", "Python"],
+      "categorias": [
+        "Programación",
+        "Python"
+      ],
       "imagen": "/aprender-django.jpg",
       "date": "18 de Octubre de 2022",
       "title": "Aprender Django",
@@ -18,7 +25,10 @@
     },
     {
       "id": "consumo-ssd-pi",
-      "categorias": ["Linux", "Raspberry"],
+      "categorias": [
+        "Linux",
+        "Raspberry"
+      ],
       "imagen": "/cpu.jpeg",
       "date": "25 de Febrero de 2022",
       "title": "Consumo alto de <i>CPU</i> cuando la <strong>Raspberry Pi</strong> trabaja desde un <strong>SSD</strong>",
@@ -26,7 +36,11 @@
     },
     {
       "id": "grabar-dd",
-      "categorias": ["Linux", "Terminal", "Bash"],
+      "categorias": [
+        "Linux",
+        "Terminal",
+        "Bash"
+      ],
       "imagen": "/dd.jpg",
       "date": "10 de Enero de 2022",
       "title": "Grabar una <i>iso</i> en un Usb desde la terminal con <strong>dd</strong>",
@@ -34,7 +48,12 @@
     },
     {
       "id": "nuevo-blog",
-      "categorias": ["Linux", "VueJS", "Markdown", "Programación"],
+      "categorias": [
+        "Linux",
+        "VueJS",
+        "Markdown",
+        "Programación"
+      ],
       "imagen": "/nuevo.png",
       "date": "22 de Diciembre de 2021",
       "title": "Nuevo <i>Blog</i> programado desde 0 con <strong>quasar.dev</strong>",
@@ -42,7 +61,11 @@
     },
     {
       "id": "script-autostart",
-      "categorias": ["Linux", "Scripts", "Bash"],
+      "categorias": [
+        "Linux",
+        "Scripts",
+        "Bash"
+      ],
       "imagen": "/bash.png",
       "date": "10 de Septiembre de 2021",
       "title": "Script en <strong>bash</strong> que comprueba si hay internet y ejecuta unos programas",
@@ -50,7 +73,11 @@
     },
     {
       "id": "pyqt5-icono",
-      "categorias": ["Programación", "Python", "Aplicaciones"],
+      "categorias": [
+        "Programación",
+        "Python",
+        "Aplicaciones"
+      ],
       "imagen": "/programa.png",
       "date": "29 de Agosto de 2021",
       "title": "Minimizar al <i>tray</i> un programa hecho en <strong>PyQt5<strong>",
@@ -58,7 +85,10 @@
     },
     {
       "id": "zram",
-      "categorias": ["Linux", "Sistema"],
+      "categorias": [
+        "Linux",
+        "Sistema"
+      ],
       "imagen": "/zram.png",
       "date": "23 de Julio de 2021",
       "title": "Instalar <strong>Zram Swap</strong> en <i>Arch Linux</i>",
@@ -66,7 +96,10 @@
     },
     {
       "id": "script-debian-updates",
-      "categorias": ["Linux", "Scripts"],
+      "categorias": [
+        "Linux",
+        "Scripts"
+      ],
       "imagen": "/script-debian-updates.png",
       "date": "22 de Mayo de 2021",
       "title": "Comprobar actualizaciones en <strong>Debian</strong>",
@@ -74,7 +107,11 @@
     },
     {
       "id": "docker-sin-sudo",
-      "categorias": ["Linux", "Terminal", "Docker"],
+      "categorias": [
+        "Linux",
+        "Terminal",
+        "Docker"
+      ],
       "imagen": "/docker.png",
       "date": "26 de Abril de 2021",
       "title": "Usar <strong>docker</strong> con tu usuario sin <i>sudo</i>",
@@ -82,7 +119,11 @@
     },
     {
       "id": "ouroboros",
-      "categorias": ["Linux", "Docker", "Aplicaciones"],
+      "categorias": [
+        "Linux",
+        "Docker",
+        "Aplicaciones"
+      ],
       "imagen": "/ouroboros.png",
       "date": "13 de Abril de 2021",
       "title": "Actualización automática de contenedores con <strong>Ouroboros</strong>",
@@ -90,7 +131,10 @@
     },
     {
       "id": "disown",
-      "categorias": ["Linux", "Terminal"],
+      "categorias": [
+        "Linux",
+        "Terminal"
+      ],
       "imagen": "/disown1.png",
       "date": "26 de Marzo de 2021",
       "title": "Como separar un proceso de la terminal con <strong>disown</strong>",
@@ -98,7 +142,11 @@
     },
     {
       "id": "eliminar-recursiva",
-      "categorias": ["Linux", "Terminal", "Scripts"],
+      "categorias": [
+        "Linux",
+        "Terminal",
+        "Scripts"
+      ],
       "imagen": "/eliminar-recursiva.png",
       "date": "16 de Marzo de 2021",
       "title": "Eliminar archivos de forma recursiva",
@@ -106,7 +154,10 @@
     },
     {
       "id": "url-radio",
-      "categorias": ["Aplicaciones", "Sonido"],
+      "categorias": [
+        "Aplicaciones",
+        "Sonido"
+      ],
       "imagen": "/url-radio.png",
       "date": "19 de Febrero de 2021",
       "title": "Conseguir la url para escuchar la radio online",
@@ -114,7 +165,11 @@
     },
     {
       "id": "autosubsync",
-      "categorias": ["Terminal", "Python", "Aplicaciones"],
+      "categorias": [
+        "Terminal",
+        "Python",
+        "Aplicaciones"
+      ],
       "imagen": "/autosubsync.PNG",
       "date": "15 de Febrero de 2021",
       "title": "Sincronizar automáticamente subtítulos utilizando el aprendizaje automático con <strong>autosubsync</strong>",
@@ -122,7 +177,11 @@
     },
     {
       "id": "copiar-mover-find",
-      "categorias": ["Linux", "Terminal", "Scripts"],
+      "categorias": [
+        "Linux",
+        "Terminal",
+        "Scripts"
+      ],
       "imagen": "/copiar-mover-find.png",
       "date": "8 de Febrero de 2021",
       "title": "Buscar archivos y copiar/mover con <i>find</i>",
@@ -130,7 +189,12 @@
     },
     {
       "id": "docker-acestream",
-      "categorias": ["Linux", "Docker", "Aplicaciones", "Imagen"],
+      "categorias": [
+        "Linux",
+        "Docker",
+        "Aplicaciones",
+        "Imagen"
+      ],
       "imagen": "/docker-acestream.jpeg",
       "date": "24 de Enero de 2021",
       "title": "Como ver contenido <strong>acestream</strong> en <strong>Linux</strong>",
@@ -138,7 +202,10 @@
     },
     {
       "id": "reinicio-programado",
-      "categorias": ["Linux", "Scripts"],
+      "categorias": [
+        "Linux",
+        "Scripts"
+      ],
       "imagen": "/crontab.png",
       "date": "5 de Enero de 2021",
       "title": "Programar el reinicio del ordenador de forma automática mediante <strong>Cron</strong>",
@@ -146,7 +213,11 @@
     },
     {
       "id": "sudo-sin-intervencion",
-      "categorias": ["Linux", "Terminal", "Scripts"],
+      "categorias": [
+        "Linux",
+        "Terminal",
+        "Scripts"
+      ],
       "imagen": "/sudo-sin-intervencion.png",
       "date": "17 de Diciembre de 2020",
       "title": "Usar <strong>sudo</strong> sin intervención del usuario",
@@ -154,7 +225,10 @@
     },
     {
       "id": "watchtower",
-      "categorias": ["Aplicaciones", "Docker"],
+      "categorias": [
+        "Aplicaciones",
+        "Docker"
+      ],
       "imagen": "/watchtower.png",
       "date": "22 de Noviembre de 2020",
       "title": "Mantener actualizados los contenedores <i>docker</i> con <strong>Watchtower</strong>",
@@ -162,7 +236,10 @@
     },
     {
       "id": "portainer",
-      "categorias": ["Aplicaciones", "Docker"],
+      "categorias": [
+        "Aplicaciones",
+        "Docker"
+      ],
       "imagen": "/portainer.png",
       "date": "7 de Noviembre de 2020",
       "title": "<strong>Portainer</strong>, magnífico gestor para Docker",
@@ -170,7 +247,12 @@
     },
     {
       "id": "cursos-youtube",
-      "categorias": ["VueJs", "Javascript", "Python", "Programación"],
+      "categorias": [
+        "VueJs",
+        "Javascript",
+        "Python",
+        "Programación"
+      ],
       "imagen": "/cursos.jpg",
       "date": "18 de Octubre de 2020",
       "title": "Un par de cursos de <strong>Youtube</strong> sobre programación",
@@ -178,7 +260,10 @@
     },
     {
       "id": "nativefier",
-      "categorias": ["Aplicaciones", "Linux"],
+      "categorias": [
+        "Aplicaciones",
+        "Linux"
+      ],
       "imagen": "/nativefier.png",
       "date": "27 de Septiembre de 2020",
       "title": "Crea tus propias aplicaciones web con <strong>Nativefier</strong>",
@@ -186,7 +271,11 @@
     },
     {
       "id": "literales",
-      "categorias": ["VueJS", "Javascript", "Programación"],
+      "categorias": [
+        "VueJS",
+        "Javascript",
+        "Programación"
+      ],
       "imagen": "/literales.png",
       "date": "13 de Septiembre de 2020",
       "title": "<i>Template literals</i> o <i>comillas invertidas</i>",
@@ -194,7 +283,11 @@
     },
     {
       "id": "vuex-nuxt-example",
-      "categorias": ["VueJS", "Javascript", "Programación"],
+      "categorias": [
+        "VueJS",
+        "Javascript",
+        "Programación"
+      ],
       "imagen": "/vuex.png",
       "date": "31 de Agosto de 2020",
       "title": "Ejemplo de <strong>Vuex</strong> con <strong>Nuxt</strong>",
@@ -202,7 +295,10 @@
     },
     {
       "id": "radicale",
-      "categorias": ["Seguridad", "Android"],
+      "categorias": [
+        "Seguridad",
+        "Android"
+      ],
       "imagen": "/radicale.png",
       "date": "16 de Agosto de 2020",
       "title": "Mi propio calendario y mi libreta de contactos con <strong>Radicale</strong>",
@@ -210,7 +306,11 @@
     },
     {
       "id": "huawei-sin-google",
-      "categorias": ["Linux", "Privacidad", "Android"],
+      "categorias": [
+        "Linux",
+        "Privacidad",
+        "Android"
+      ],
       "imagen": "/sin-google.png",
       "date": "2 de Agosto de 2020",
       "title": "<i>Huawei P40 Lite</i>, una opción sin <strong>Google</strong>",
@@ -218,7 +318,11 @@
     },
     {
       "id": "crud_con_python",
-      "categorias": ["Git", "Programación", "Python"],
+      "categorias": [
+        "Git",
+        "Programación",
+        "Python"
+      ],
       "imagen": "/crud.png",
       "date": "18 de Julio de 2020",
       "title": "Mi primer CRUD con Python",
@@ -226,7 +330,10 @@
     },
     {
       "id": "crear-servicio",
-      "categorias": ["Linux", "Scripts"],
+      "categorias": [
+        "Linux",
+        "Scripts"
+      ],
       "imagen": "/servicio.png",
       "date": "21 de Junio de 2020",
       "title": "Ejecutar un script al iniciar la Raspberry Pi",
@@ -234,7 +341,11 @@
     },
     {
       "id": "script-aviso-bateria",
-      "categorias": ["Linux", "Scripts", "Aplicaciones"],
+      "categorias": [
+        "Linux",
+        "Scripts",
+        "Aplicaciones"
+      ],
       "imagen": "/bateria_sh.png",
       "date": "1 de Junio de 2020",
       "title": "<i>Script</i> para avisar de la carga de la batería",
@@ -242,7 +353,11 @@
     },
     {
       "id": "scroll-en-tmux",
-      "categorias": ["Linux", "terminal", "Aplicaciones"],
+      "categorias": [
+        "Linux",
+        "terminal",
+        "Aplicaciones"
+      ],
       "imagen": "/scrollTmux.png",
       "date": "31 de Mayo de 2020",
       "title": "Activar el <i>scroll</i> en <strong>Tmux</strong>",
@@ -250,7 +365,11 @@
     },
     {
       "id": "tmux-sacale-mas-partido",
-      "categorias": ["Linux", "terminal", "Aplicaciones"],
+      "categorias": [
+        "Linux",
+        "terminal",
+        "Aplicaciones"
+      ],
       "imagen": "/tmux.png",
       "date": "21 de Mayo de 2020",
       "title": "<strong>Tmux</strong>, sácale más partido a tu terminal",
@@ -258,7 +377,11 @@
     },
     {
       "id": "alacritty-la-terminal-mas-rapida",
-      "categorias": ["Linux", "terminal", "Aplicaciones"],
+      "categorias": [
+        "Linux",
+        "terminal",
+        "Aplicaciones"
+      ],
       "imagen": "/alacritty.png",
       "date": "17 de Mayo de 2020",
       "title": "<strong>Alacritty</strong>, la terminal más rápida",
@@ -266,7 +389,11 @@
     },
     {
       "id": "primeros-pasos-python-qt",
-      "categorias": ["Linux", "Programación", "Python"],
+      "categorias": [
+        "Linux",
+        "Programación",
+        "Python"
+      ],
       "imagen": "/qtdesigner.png",
       "date": "05 de Mayo de 2020",
       "title": "Primeros pasos con <i>PyQt</i> y <i>QtDesigner</i>. Primer programa con <i>Python</i>",
@@ -274,7 +401,10 @@
     },
     {
       "id": "free-dns",
-      "categorias": ["Redes", "Linux"],
+      "categorias": [
+        "Redes",
+        "Linux"
+      ],
       "imagen": "/free-dns.jpg",
       "date": "03 de Mayo de 2020",
       "title": "Conectarnos desde fuera de la red con <strong>free-dns</strong>",
@@ -282,7 +412,11 @@
     },
     {
       "id": "git-password",
-      "categorias": ["Git", "Terminal", "Seguridad"],
+      "categorias": [
+        "Git",
+        "Terminal",
+        "Seguridad"
+      ],
       "imagen": "/git-password.png",
       "date": "11 de Abril de 2020",
       "title": "Hacer que <i>git</i> no pida contraseña",
@@ -290,7 +424,10 @@
     },
     {
       "id": "comandos-git",
-      "categorias": ["Git", "Terminal"],
+      "categorias": [
+        "Git",
+        "Terminal"
+      ],
       "imagen": "/comandos-git.jpg",
       "date": "4 de Abril de 2020",
       "title": "Los comandos que necesito para trabajar con <i>git</i> desde la terminal",
@@ -298,7 +435,10 @@
     },
     {
       "id": "mkinitcpio",
-      "categorias": ["Errores", "Linux"],
+      "categorias": [
+        "Errores",
+        "Linux"
+      ],
       "imagen": "/mkinitcpio.jpg",
       "date": "26 de Marzo de 2020",
       "title": "Possibly missing firmware for module: aic94xx, wd719x",
@@ -306,7 +446,10 @@
     },
     {
       "id": "buscar-en-ficheros",
-      "categorias": ["Linux", "Terminal"],
+      "categorias": [
+        "Linux",
+        "Terminal"
+      ],
       "imagen": "/search.png",
       "date": "22 de Marzo de 2020",
       "title": "Buscar archivos en Linux por nombre o contenido",
@@ -314,7 +457,9 @@
     },
     {
       "id": "chuleta-de-markdown",
-      "categorias": ["Markdown"],
+      "categorias": [
+        "Markdown"
+      ],
       "imagen": "/markdown.png",
       "date": "17 de Marzo de 2020",
       "title": "Mi chuleta de Markdown",
@@ -322,7 +467,11 @@
     },
     {
       "id": "manuales-vuejs-espanol",
-      "categorias": ["Javascript", "VueJS", "Programación"],
+      "categorias": [
+        "Javascript",
+        "VueJS",
+        "Programación"
+      ],
       "imagen": "/vuejs.jpg",
       "date": "15 de Marzo de 2020",
       "title": "Manuales de VueJS en español",
